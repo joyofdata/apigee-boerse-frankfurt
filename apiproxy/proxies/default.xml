@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="stockInfo">
+            <Description>retrieve stock info</Description>
+            <Request>
+                <Step>
+                    <Name>isin</Name>
+                </Step>
+                <Step>
+                    <Name>stock-info-target-path</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/info") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="stocksInIndex">
+            <Description>retrieve stocks for index</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/search/equity_search") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="priceHistory">
+            <Description>retrieve price history for stock</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/data/price_history") and (request.verb = "GET")</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/boerse-frankfurt-de/v1/</BasePath>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>

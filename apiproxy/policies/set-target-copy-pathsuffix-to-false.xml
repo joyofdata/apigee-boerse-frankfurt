@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-target-copy-pathsuffix-to-false">
+    <DisplayName>target.copy.pathsuffix = false</DisplayName>
+    <!-- don't automatically append path from original request to request for target server -->
+    <AssignVariable>
+        <Name>target.copy.pathsuffix</Name>
+        <Value>false</Value>
+    </AssignVariable>
+</AssignMessage>

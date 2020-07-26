@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="6" name="boerse-frankfurt-de">
+    <Basepaths>/boerse-frankfurt-de</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1595779371943</CreatedAt>
+    <CreatedBy>person@imap.cc</CreatedBy>
+    <Description>Stocks Info API of Boerse Frankfurt</Description>
+    <DisplayName>boerse-frankfurt-de</DisplayName>
+    <LastModifiedAt>1595791452497</LastModifiedAt>
+    <LastModifiedBy>person@imap.cc</LastModifiedBy>
+    <ManifestVersion>SHA-512:abe8b90c81587c733e79d33ae40f5c245c900a2de05036ea2bc5d345ed939471aeac7a5a0f12570f575e5875e26cfe21cfb4096e0932ebe6b4845c7acccde257</ManifestVersion>
+    <Policies>
+        <Policy>isin</Policy>
+        <Policy>set-target-copy-pathsuffix-to-false</Policy>
+        <Policy>stock-info-target-path</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
