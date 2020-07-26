@@ -15,7 +15,12 @@
                     <Name>stock-info-target-path</Name>
                 </Step>
             </Request>
-            <Response/>
+            <Response>
+                <Step>
+                    <Name>stock-info-transform-response</Name>
+                    <Condition>response.status.code = 200</Condition>
+                </Step>
+            </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/info") and (request.verb = "GET")</Condition>
         </Flow>
         <Flow name="stocksInIndex">

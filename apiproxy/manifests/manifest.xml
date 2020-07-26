@@ -4,11 +4,13 @@
         <VersionInfo resourceName="isin" version="SHA-512:f68da6986e8c456af6a20a7dbfd309482119fcf1982200d58951a2ef96720a310a77c4615fa83cb605b4795910e3a83ae89750eca127212f30e76910a6a16f08"/>
         <VersionInfo resourceName="set-target-copy-pathsuffix-to-false" version="SHA-512:536533ba4d3946b22fc61db8512e370554e84fab42a0d0a3d1ad45a5f3ee5872a2fd0d00f9f0b5b836047265ec72423b4bca2129d8b9777cc83459746e3724f0"/>
         <VersionInfo resourceName="stock-info-target-path" version="SHA-512:88d464f1bb2a6c667e88345433ee58b6bdbb287c4950c263fafa777c3fc3b09bf7e7887de93143c97739b22a821189c96b1987ddd2e4e83c6fb23235743c54e1"/>
+        <VersionInfo resourceName="stock-info-transform-response" version="SHA-512:7ee047e87d0c6a3fabf0fba196c156d8c5ac7e9dde8bb260ef4413ec76c5c6efcd2bd54a0e3474a4431d75fa939c9194ab207db4294aee70107fe5246a270591"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:b542442555630fd87000dcf5ff49f5ee3c062cf382604c3ad795a3eaaa5c349e16681debb8ee5e70ae838107b400d6d402a6d2b6bc7ef4ee2333bd860b27f484"/>
+        <VersionInfo resourceName="default" version="SHA-512:ab3073b72131fad1d8fbfceb33bd104d12030d40280e547177696ae900055b3dd32067ebca462e876ccc9f7a75f0542edea84d7860ea4fdac7daab5266a600d9"/>
     </ProxyEndpoints>
     <Resources>
+        <VersionInfo resourceName="jsc://stock-info-transform-response.js" version="SHA-512:681810093237d9b9d1d715f8d7c6cb53f9674617b73ba368b5e48e1ea594c7fe7d33c27b8b22dc381d1aa25fa26296a3aba3269041a3b6e76fe7620a25d612f8"/>
         <VersionInfo resourceName="openapi://association.json" version="SHA-512:153775e53f6ee0fdfc54ea2cafdb4318f6ddccfbc56ff83351304f89fafa673b61d20a92e1a247d32ee257a70381e030897dd13325aa688645383601504469a9"/>
     </Resources>
     <SharedFlows/>
