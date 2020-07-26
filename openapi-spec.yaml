@@ -1,0 +1,269 @@
+openapi: 3.0.2
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/raffael/boerse-frankfurt.de/1.0.0
+  - description: api.boerse-frankfurt.de
+    url: https://api.boerse-frankfurt.de/
+info:
+  description: Stocks Info API of Boerse Frankfurt
+  version: "1.0.0"
+  title: api.boerse-frankfurt.de
+paths:
+  /data/equity_master_data:
+    get:
+      summary: retrieve stock info
+      operationId: stockInfo
+      parameters:
+        - in: query
+          name: isin
+          description: the stock's ISIN
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StockInfoResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                
+  /search/equity_search:
+    post:
+      summary: retrieve stocks for index
+      operationId: stocksInIndex
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StocksInIndexPayload'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StocksInIndexResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                
+  /data/price_history:
+    get:
+      summary: retrieve price history for stock
+      operationId: priceHistory
+      parameters:
+        - in: query
+          name: isin
+          description: the stock's ISIN
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: limit
+          description: limit
+          required: true
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: offset
+          description: offset
+          required: true
+          schema:
+            type: integer
+            default: 0
+        - in: query
+          name: mic
+          description: mic
+          required: true
+          schema:
+            type: string
+            default: "XETR"
+        - in: query
+          name: minDate
+          description: minDate
+          required: true
+          schema:
+            type: string
+            format: date
+            default: "2020-03-01"
+        - in: query
+          name: maxDate
+          description: maxDate
+          required: true
+          schema:
+            type: string
+            format: date
+            default: "2020-03-31"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PriceHistoryResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    PriceHistoryResponse:
+      type: object
+      properties:
+        isin:
+          type: string
+        totalCount:
+          type: integer
+        tradedInPercent:
+          type: boolean
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+              open:
+                type: number
+              close:
+                type: number
+              high:
+                type: number
+              low:
+                type: number
+              turnoverPieces:
+                type: integer
+              turnoverEuro:
+                type: number
+              
+    
+    StockInfoResponse:
+      type: object
+      properties:
+        isin:
+          type: string
+        market:
+          $ref: '#/components/schemas/ResponseValue'
+        segment:
+          $ref: '#/components/schemas/ResponseValue'
+        industrySector:
+          $ref: '#/components/schemas/ResponseValue'
+        instrumentType:
+          $ref: '#/components/schemas/ResponseValue'
+        securityType:
+          $ref: '#/components/schemas/ResponseValue'
+        originCountry:
+          $ref: '#/components/schemas/ResponseValue'
+        sector:
+          $ref: '#/components/schemas/ResponseValue'
+        subsector:
+          $ref: '#/components/schemas/ResponseValue'
+
+    ResponseValue:
+      type: object
+      properties:
+        originalValue:
+          type: string
+        translations:
+          type: object
+          properties:
+            de:
+              type: string
+            en:
+              type: string
+            others:
+              type: string
+
+    StocksInIndexResponse:
+      type: object
+      properties:
+        recordsTotal:
+          type: integer
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                $ref: '#/components/schemas/ResponseValue'
+              wkn:
+                type: string
+              isin:
+                type: string
+              slug:
+                type: string
+              researchLink:
+                type: string
+              overview:
+                type: object
+              performance:
+                type: object
+              keyData:
+                type: object
+              sustainablity:
+                type: object
+    
+    StocksInIndexPayload:
+      type: object
+      properties:
+        indices:
+          type: array
+          items:
+            type: string
+            example: "DE0008469008"
+        lang:
+          type: string
+          example: "de"
+        offset:
+          type: integer
+          example: 0
+        limit:
+          type: integer
+          example: 10
+        sorting:
+          type: string
+          example: "NAME"
+        sortOrder:
+          type: string
+          example: "ASC"
+          
+    ErrorResponse:
+      type: object
+      properties:
+        messages:
+          type: array
+          items:
+            type: string
