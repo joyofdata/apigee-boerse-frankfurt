@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ExtractVariables async="false" continueOnError="false" enabled="true" name="price-history-extract-params">
-    <DisplayName>price history - extract params</DisplayName>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="index-stocks-extract-params">
+    <DisplayName>index stocks - extract params</DisplayName>
     <URIPath name="name">
-        <Pattern ignoreCase="true">/stocks/{isin}/prices</Pattern>
+        <Pattern ignoreCase="true">/index/{isin}/stocks</Pattern>
     </URIPath>
     <QueryParam name="limit">
         <Pattern ignoreCase="true">{limit}</Pattern>
@@ -10,14 +10,14 @@
     <QueryParam name="offset">
         <Pattern ignoreCase="true">{offset}</Pattern>
     </QueryParam>
-    <QueryParam name="market">
-        <Pattern ignoreCase="true">{market}</Pattern>
+    <QueryParam name="sort_by">
+        <Pattern ignoreCase="true">{sort_by}</Pattern>
     </QueryParam>
-    <QueryParam name="min_date">
-        <Pattern ignoreCase="true">{min_date}</Pattern>
+    <QueryParam name="sort_order">
+        <Pattern ignoreCase="true">{sort_order}</Pattern>
     </QueryParam>
-    <QueryParam name="max_date">
-        <Pattern ignoreCase="true">{max_date}</Pattern>
+    <QueryParam name="lang">
+        <Pattern ignoreCase="true">{lang}</Pattern>
     </QueryParam>
     <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
     <Source clearPayload="false">request</Source>

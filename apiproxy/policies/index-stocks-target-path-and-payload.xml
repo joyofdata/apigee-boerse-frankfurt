@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="index-stocks-target-path-and-payload">
+    <DisplayName>index stocks - set target path and payload</DisplayName>
+    <Properties/>
+    <Set>
+        <Verb>POST</Verb>
+        <Payload contentType="application/json">
+            {
+                "indices": [
+                    "{apigee.isin}"
+                ],
+                "lang": "{apigee.lang}",
+                "offset": {apigee.offset},
+                "limit": {apigee.limit},
+                "sorting": "{apigee.sort_by}",
+                "sortOrder": "{apigee.sort_order}"
+            }
+        </Payload>
+    </Set>
+    <AssignVariable>
+        <Name>targetPath</Name>
+        <Template>search/equity_search</Template>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

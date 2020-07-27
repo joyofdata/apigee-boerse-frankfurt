@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="8" name="boerse-frankfurt-de">
+<APIProxy revision="9" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1595779371943</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1595882354737</LastModifiedAt>
+    <LastModifiedAt>1595887292950</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:fabb4a238e860ef9e0d127992f151606135c674b7765f461516252b921a09decb9359ade6896ec0a139298f06feb78e0897e12dada4108b9ac986bd5bfbd61f8</ManifestVersion>
+    <ManifestVersion>SHA-512:40b26934669ec688ebf019222d1dc6fc9211741c4826b384b4bbd4c17946c9fdced08916f85203b22738eb0b7d639c10e70b717baa117611394554e4dc85a0cb</ManifestVersion>
     <Policies>
-        <Policy>isin</Policy>
+        <Policy>index-stocks-default-values</Policy>
+        <Policy>index-stocks-extract-params</Policy>
+        <Policy>index-stocks-target-path-and-payload</Policy>
+        <Policy>index-stocks-transform-response</Policy>
         <Policy>price-history-default-values</Policy>
         <Policy>price-history-extract-params</Policy>
         <Policy>price-history-target-path-and-params</Policy>
         <Policy>set-target-copy-pathsuffix-to-false</Policy>
         <Policy>stock-info-extract-params</Policy>
         <Policy>stock-info-target-path-and-params</Policy>
-        <Policy>stock-info-target-path</Policy>
         <Policy>stock-info-transform-response</Policy>
     </Policies>
     <ProxyEndpoints>
@@ -25,6 +27,7 @@
     </ProxyEndpoints>
     <Resources>
         <Resource>openapi://association.json</Resource>
+        <Resource>jsc://index-stocks-transform-response.js</Resource>
         <Resource>jsc://stock-info-transform-response.js</Resource>
     </Resources>
     <Spec></Spec>

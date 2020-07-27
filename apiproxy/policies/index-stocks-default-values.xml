@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="index-stocks-default-values">
+    <DisplayName>index stocks - default values</DisplayName>
+    <AssignVariable>
+        <Name>apigee.limit</Name>
+        <Value>10</Value>
+        <Ref>apigee.limit</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>apigee.offset</Name>
+        <Value>0</Value>
+        <Ref>apigee.offset</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>apigee.lang</Name>
+        <Value>en</Value>
+        <Ref>apigee.lang</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>apigee.sort_by</Name>
+        <Value>NAME</Value>
+        <Ref>apigee.sort_by</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>apigee.sort_order</Name>
+        <Value>ASC</Value>
+        <Ref>apigee.sort_order</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

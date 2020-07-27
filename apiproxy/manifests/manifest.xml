@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest name="manifest">
     <Policies>
-        <VersionInfo resourceName="isin" version="SHA-512:f68da6986e8c456af6a20a7dbfd309482119fcf1982200d58951a2ef96720a310a77c4615fa83cb605b4795910e3a83ae89750eca127212f30e76910a6a16f08"/>
+        <VersionInfo resourceName="index-stocks-default-values" version="SHA-512:11c2702aa5924483b0f927bb7f6fdceebb8f2999fe12a4827dd5d03c6ed875c6e741638a0e6d958ec3b9ce2eeb1dc15b7697597e2d98773878e8758aac6050d1"/>
+        <VersionInfo resourceName="index-stocks-extract-params" version="SHA-512:31f7474dabd4921c7a8a225944b081ad35fc93fb8d80f09d9317faa887b70f72cfda5a0f3b91e714e3d8f7542dac62a210110a5163216059064f202b2de189aa"/>
+        <VersionInfo resourceName="index-stocks-target-path-and-payload" version="SHA-512:7b3a7df7db2da9bb400c7cd1e1dd6993be7fe11afb09afa42924aa92b8780ca4a0b0c8057d36ee9a1228a2bc33b76953042a3c3feab31fbf8764b7290e8a06a7"/>
+        <VersionInfo resourceName="index-stocks-transform-response" version="SHA-512:90276f3f0ced34d0b7b7acdc33688a5d93a7f06b28596345f101698115fe6cef59059128349b874ef2884ce55541621da75a13c241e7e7c7bede3d461059a3c3"/>
         <VersionInfo resourceName="price-history-default-values" version="SHA-512:d6e245bd6e5f82ac35873496ced833ae501a8fbf71e6dba5083715504130e50b550985a9d875025557c1845e07af4ba2f50d1c1c91a6d8f5e21a1ff2da2bd513"/>
-        <VersionInfo resourceName="price-history-extract-params" version="SHA-512:b366da46a85889a070e223efe43ec183d0a3f4acf29061b8467c790ccb9859eaca7a0ff0a33c7b34e4521b0103eb7c25fad3ecb446f0a410fa365a70c1c0bb7d"/>
+        <VersionInfo resourceName="price-history-extract-params" version="SHA-512:5b6f4f9781062fa0502b7127c874d60921ffccfa9ad993d2521e1d5838e4b42558c8b579c18858bee77f036c6642b8203ac4b1e09e019a5ed8958bc99889f99b"/>
         <VersionInfo resourceName="price-history-target-path-and-params" version="SHA-512:16c15e0516f1f2462c46893a024c22914024ae066c0209083e7f2c53cfdf0967f617c591cc31e96b6752e61aa677c38a3cb6ef39fbcc4b8ea42317a873d65a9a"/>
         <VersionInfo resourceName="set-target-copy-pathsuffix-to-false" version="SHA-512:536533ba4d3946b22fc61db8512e370554e84fab42a0d0a3d1ad45a5f3ee5872a2fd0d00f9f0b5b836047265ec72423b4bca2129d8b9777cc83459746e3724f0"/>
         <VersionInfo resourceName="stock-info-extract-params" version="SHA-512:87f00f1d8e80fe94dfeeb7c0f6ff5e0a7c7e1f1b4a92dbbc4b57a697885354dbefda02ce0ff61a5673ce7912f83954f492a3be3b1d808f3f8a3c6b4e5b1b1c61"/>
-        <VersionInfo resourceName="stock-info-target-path" version="SHA-512:88d464f1bb2a6c667e88345433ee58b6bdbb287c4950c263fafa777c3fc3b09bf7e7887de93143c97739b22a821189c96b1987ddd2e4e83c6fb23235743c54e1"/>
         <VersionInfo resourceName="stock-info-target-path-and-params" version="SHA-512:8ebdabe69ce6f4b0edde342cc30b5314eb0e4085089ce1641819e69887b61eba738681d806be565dcbbbd3aa47d74ca0dd549c7d17c5e8d746cb2b01fdaace59"/>
         <VersionInfo resourceName="stock-info-transform-response" version="SHA-512:7ee047e87d0c6a3fabf0fba196c156d8c5ac7e9dde8bb260ef4413ec76c5c6efcd2bd54a0e3474a4431d75fa939c9194ab207db4294aee70107fe5246a270591"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:783679361b93ff5df175ec76544f99ad99efc828bdb5d4153493ed6aa2797ed92541873b1528aad3cdb4bd44cb4a09cd6f7ba8191999a4f779e827d948fc424f"/>
+        <VersionInfo resourceName="default" version="SHA-512:3ea7b56969d4c2f12ffaa1b17f0c426d1d16e3f8db57cc9e5f5bbb5c3993a3a1f125c74a928e63235d19936ac127f497a8c0d1963ea24772d3937da8916e725c"/>
     </ProxyEndpoints>
     <Resources>
+        <VersionInfo resourceName="jsc://index-stocks-transform-response.js" version="SHA-512:26a3cb52572b5c99d9726d6f3c1bbd49df0d03921fb2387e293e47079adecc475c358fc07dc904e6cc0eb023278a325dc96d21da6c0e6bb75af4fa9fe0fa6782"/>
         <VersionInfo resourceName="jsc://stock-info-transform-response.js" version="SHA-512:681810093237d9b9d1d715f8d7c6cb53f9674617b73ba368b5e48e1ea594c7fe7d33c27b8b22dc381d1aa25fa26296a3aba3269041a3b6e76fe7620a25d612f8"/>
         <VersionInfo resourceName="openapi://association.json" version="SHA-512:153775e53f6ee0fdfc54ea2cafdb4318f6ddccfbc56ff83351304f89fafa673b61d20a92e1a247d32ee257a70381e030897dd13325aa688645383601504469a9"/>
     </Resources>
