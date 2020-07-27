@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="7" name="boerse-frankfurt-de">
+<APIProxy revision="8" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1595779371943</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1595793846087</LastModifiedAt>
+    <LastModifiedAt>1595882354737</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:2a84240cd4f07a4c12a48a0c48c2343c2b49b2f7f901be02f0c07f8ccb7d0b6abb861e114fae4732271264aa4de3c2ceeb344eb03e7474ac1e821401b9b23e80</ManifestVersion>
+    <ManifestVersion>SHA-512:fabb4a238e860ef9e0d127992f151606135c674b7765f461516252b921a09decb9359ade6896ec0a139298f06feb78e0897e12dada4108b9ac986bd5bfbd61f8</ManifestVersion>
     <Policies>
         <Policy>isin</Policy>
+        <Policy>price-history-default-values</Policy>
+        <Policy>price-history-extract-params</Policy>
+        <Policy>price-history-target-path-and-params</Policy>
         <Policy>set-target-copy-pathsuffix-to-false</Policy>
+        <Policy>stock-info-extract-params</Policy>
+        <Policy>stock-info-target-path-and-params</Policy>
         <Policy>stock-info-target-path</Policy>
         <Policy>stock-info-transform-response</Policy>
     </Policies>

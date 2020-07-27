@@ -9,10 +9,10 @@
             <Description>retrieve stock info</Description>
             <Request>
                 <Step>
-                    <Name>isin</Name>
+                    <Name>stock-info-extract-params</Name>
                 </Step>
                 <Step>
-                    <Name>stock-info-target-path</Name>
+                    <Name>stock-info-target-path-and-params</Name>
                 </Step>
             </Request>
             <Response>
@@ -31,9 +31,19 @@
         </Flow>
         <Flow name="priceHistory">
             <Description>retrieve price history for stock</Description>
-            <Request/>
+            <Request>
+                <Step>
+                    <Name>price-history-extract-params</Name>
+                </Step>
+                <Step>
+                    <Name>price-history-default-values</Name>
+                </Step>
+                <Step>
+                    <Name>price-history-target-path-and-params</Name>
+                </Step>
+            </Request>
             <Response/>
-            <Condition>(proxy.pathsuffix MatchesPath "/data/price_history") and (request.verb = "GET")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/prices") and (request.verb = "GET")</Condition>
         </Flow>
     </Flows>
     <PostFlow name="PostFlow">

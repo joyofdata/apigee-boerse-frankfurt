@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="price-history-target-path-and-params">
+    <DisplayName>price history - set target path and query params</DisplayName>
+    <Set>
+        <QueryParams>
+            <QueryParam name="isin">{apigee.isin}</QueryParam>
+            <QueryParam name="limit">{apigee.limit}</QueryParam>
+            <QueryParam name="offset">{apigee.offset}</QueryParam>
+            <QueryParam name="mic">{apigee.market}</QueryParam>
+            <QueryParam name="minDate">{apigee.min_date}</QueryParam>
+            <QueryParam name="maxDate">{apigee.max_date}</QueryParam>
+        </QueryParams>
+    </Set>
+    <AssignVariable>
+        <Name>targetPath</Name>
+        <Template>data/price_history</Template>
+    </AssignVariable>
+</AssignMessage>

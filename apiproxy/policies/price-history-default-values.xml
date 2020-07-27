@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="price-history-default-values">
+    <DisplayName>price history - default values</DisplayName>
+    <AssignVariable>
+        <Name>apigee.limit</Name>
+        <Value>10</Value>
+        <Ref>apigee.limit</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>apigee.offset</Name>
+        <Value>0</Value>
+        <Ref>apigee.offset</Ref>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>apigee.market</Name>
+        <Value>XETR</Value>
+        <Ref>apigee.market</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
