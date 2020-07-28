@@ -15,7 +15,7 @@
         <VersionInfo resourceName="stock-info-transform-response" version="SHA-512:7ee047e87d0c6a3fabf0fba196c156d8c5ac7e9dde8bb260ef4413ec76c5c6efcd2bd54a0e3474a4431d75fa939c9194ab207db4294aee70107fe5246a270591"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:a89b9636f2e49f2f72a02b6563bbc870336aad4a5ce5b68cfec42881a32d6df71e03d5685ca142876d65c4e7f085fe6bf563bba5889f059b193e2e78cf3f0148"/>
+        <VersionInfo resourceName="default" version="SHA-512:7d21ade795588745640ebdd931d517669c078fc8770811c3c5cd0f6545a0aa9c550ab0dfbbd4748c564ef87820e264eb74697a4c4e1251a9f4561015605adc2e"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://index-stocks-transform-response.js" version="SHA-512:26a3cb52572b5c99d9726d6f3c1bbd49df0d03921fb2387e293e47079adecc475c358fc07dc904e6cc0eb023278a325dc96d21da6c0e6bb75af4fa9fe0fa6782"/>

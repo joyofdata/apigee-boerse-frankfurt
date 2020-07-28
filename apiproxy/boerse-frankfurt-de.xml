@@ -6,9 +6,9 @@
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1595930700155</LastModifiedAt>
+    <LastModifiedAt>1595930889020</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:c07fa5df8b32114e2e8cc8bbfc9f7726e5a334ae6ba095365718f3e10cfa864e85259d682ec5a246fc483ae1bfc8554c3d7b7df23b87f723cb4d64ffb1ebcffe</ManifestVersion>
+    <ManifestVersion>SHA-512:acba1d88acde025412b3b81517e81505d20a0f775f59e1f4e2704b1578b2c4809d6017e803f00894c39142b65a4812245fed73d07f523bef7c0557ab1d7a1882</ManifestVersion>
     <Policies>
         <Policy>index-stocks-default-values</Policy>
         <Policy>index-stocks-extract-params</Policy>

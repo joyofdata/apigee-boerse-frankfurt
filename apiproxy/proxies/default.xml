@@ -46,12 +46,6 @@
                     <Condition>response.status.code = 200</Condition>
                 </Step>
             </Response>
-            <!-- 
-                The condition should be:
-                <Condition>(proxy.pathsuffix MatchesPath "/index/*/stocks") and (request.verb = "GET")</Condition>
-                but then the response flow is not executed.
-                https://community.apigee.com/questions/85430/changing-requestverb-breaks-flow.html
-            -->
             <Condition>(proxy.pathsuffix MatchesPath "/index/*/stocks") and (originalRequestVerb = "GET")</Condition>
         </Flow>
         <Flow name="priceHistory">
