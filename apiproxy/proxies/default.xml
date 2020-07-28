@@ -9,7 +9,25 @@
         <Response/>
     </PreFlow>
     <Flows>
-        <Flow name="stockInfo">
+        <Flow name="OptionsPreFlight">
+            <Request>
+                <!--
+                    In case of an OPTIONS pre-flight request none of the flows is activated.
+                    To avoid an error because of targetPath variable being undefined we set
+                    it to an empty string here.
+                -->
+                <Step>
+                    <Name>cors-pre-flight-target-path</Name>
+                </Step>
+            </Request>
+            <Response>
+                <!--
+                    The CORS support headers are set for all transactions at TargetEndpoint/PreFlow.
+                -->
+            </Response>
+            <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+        </Flow>
+        <Flow name="StocksInfo">
             <Description>retrieve stock info</Description>
             <Request>
                 <Step>
@@ -27,7 +45,7 @@
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/info") and (originalRequestVerb = "GET")</Condition>
         </Flow>
-        <Flow name="stocksInIndex">
+        <Flow name="IndexStocks">
             <Description>retrieve stocks for index</Description>
             <Request>
                 <Step>
@@ -48,7 +66,7 @@
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/index/*/stocks") and (originalRequestVerb = "GET")</Condition>
         </Flow>
-        <Flow name="priceHistory">
+        <Flow name="StocksPrices">
             <Description>retrieve price history for stock</Description>
             <Request>
                 <Step>

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="10" name="boerse-frankfurt-de">
+<APIProxy revision="13" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1595779371943</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1595930889020</LastModifiedAt>
+    <LastModifiedAt>1595963853253</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:acba1d88acde025412b3b81517e81505d20a0f775f59e1f4e2704b1578b2c4809d6017e803f00894c39142b65a4812245fed73d07f523bef7c0557ab1d7a1882</ManifestVersion>
+    <ManifestVersion>SHA-512:cecf48b7aa662dbeaa5840494b4153ada370e57ebbcabdd2f2f9d50ecde8d8a7677c13af8167c7e43508d6715655d6c526a1e5d2b6da0d6db3f9d5d9e044307d</ManifestVersion>
     <Policies>
+        <Policy>add-cors-headers</Policy>
+        <Policy>cors-pre-flight-target-path</Policy>
         <Policy>index-stocks-default-values</Policy>
         <Policy>index-stocks-extract-params</Policy>
         <Policy>index-stocks-target-path-and-payload</Policy>

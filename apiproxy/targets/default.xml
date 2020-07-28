@@ -2,7 +2,14 @@
 <TargetEndpoint name="default">
     <PreFlow name="PreFlow">
         <Request/>
-        <Response/>
+        <Response>
+            <!-- 
+                here we add headers for CORS support. 
+            -->
+            <Step>
+                <Name>add-cors-headers</Name>
+            </Step>
+        </Response>
     </PreFlow>
     <Flows/>
     <PostFlow name="PostFlow">
