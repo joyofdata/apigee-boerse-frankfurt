@@ -1,0 +1,257 @@
+openapi: 3.0.2
+servers:
+  - description: prod
+    url: https://person-eval-prod.apigee.net/boerse-frankfurt-de/v1/
+  - description: test
+    url: https://person-eval-test.apigee.net/boerse-frankfurt-de/v1/
+info:
+  description: Stock Exchange Info API
+  version: "0.0.0"
+  title: Stock Exchange Info API
+paths:
+  /stocks/{isin}/info:
+    get:
+      summary: retrieve stock info
+      operationId: stocksInfo
+      parameters:
+        - in: path
+          name: isin
+          schema:
+            type: string
+          required: true
+          description: ISIN
+          example: DE0005557508
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StocksInfoResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                
+  /index/{isin}/stocks:
+    get:
+      summary: retrieve stocks for index
+      operationId: indexStocks
+      parameters:
+        - in: path
+          name: isin
+          schema:
+            type: string
+          required: true
+          description: the index's ISIN
+          example: DE0008469008
+        - in: query
+          name: limit
+          description: limit
+          required: false
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: offset
+          description: offset
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - in: query
+          name: sort_by
+          description: sort by what
+          required: false
+          schema:
+            type: string
+            default: "NAME"
+        - in: query
+          name: sort_order
+          description: how to order
+          required: false
+          schema:
+            type: string
+            default: "ASC"
+        - in: query
+          name: lang
+          description: language
+          required: false
+          schema:
+            type: string
+            default: "en"
+
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IndexStocksResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+                
+  /stocks/{isin}/prices:
+    get:
+      summary: retrieve price history for stock
+      operationId: priceHistory
+      parameters:
+        - in: path
+          name: isin
+          description: the stock's ISIN
+          required: true
+          schema:
+            type: string
+          example: DE0005557508
+        - in: query
+          name: limit
+          description: limit
+          required: false
+          schema:
+            type: integer
+            default: 10
+        - in: query
+          name: offset
+          description: offset
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - in: query
+          name: market
+          description: exchange
+          required: false
+          schema:
+            type: string
+            default: "XETR"
+        - in: query
+          name: min_date
+          description: lower bound of time span
+          required: true
+          schema:
+            type: string
+            format: date
+          example: "2020-03-01"
+        - in: query
+          name: max_date
+          description: upper bound of time span
+          required: true
+          schema:
+            type: string
+            format: date
+          example: "2020-03-31"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StocksPricesResponse'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    StocksPricesResponse:
+      type: object
+      properties:
+        isin:
+          type: string
+        totalCount:
+          type: integer
+        tradedInPercent:
+          type: boolean
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+              open:
+                type: number
+              close:
+                type: number
+              high:
+                type: number
+              low:
+                type: number
+              turnoverPieces:
+                type: integer
+              turnoverEuro:
+                type: number
+              
+    
+    StocksInfoResponse:
+      type: object
+      properties:
+        isin:
+          type: string
+        market:
+          type: string
+        segment:
+          type: string
+        industrySector:
+          type: string
+        instrumentType:
+          type: string
+        securityType:
+          type: string
+        originCountry:
+          type: string
+        sector:
+          type: string
+        subSector:
+          type: string
+
+    IndexStocksResponse:
+      type: object
+      properties:
+        totalRecords:
+          type: integer
+        stocks:
+          type: array
+          items:
+            type: object
+            properties:
+              name:
+                type: string
+              wkn:
+                type: string
+              isin:
+                type: string
+          
+    ErrorResponse:
+      type: object
+      properties:
+        messages:
+          type: array
+          items:
+            type: string
