@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
     <PreFlow name="PreFlow">
-        <Request/>
+        <Request>
+            <Step>
+                <Name>set-original-request-verb</Name>
+            </Step>
+        </Request>
         <Response/>
     </PreFlow>
     <Flows>
@@ -21,7 +25,7 @@
                     <Condition>response.status.code = 200</Condition>
                 </Step>
             </Response>
-            <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/info") and (request.verb = "GET")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/info") and (originalRequestVerb = "GET")</Condition>
         </Flow>
         <Flow name="stocksInIndex">
             <Description>retrieve stocks for index</Description>
@@ -48,7 +52,7 @@
                 but then the response flow is not executed.
                 https://community.apigee.com/questions/85430/changing-requestverb-breaks-flow.html
             -->
-            <Condition>(proxy.pathsuffix MatchesPath "/index/*/stocks")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/index/*/stocks") and (originalRequestVerb = "GET")</Condition>
         </Flow>
         <Flow name="priceHistory">
             <Description>retrieve price history for stock</Description>
@@ -64,7 +68,7 @@
                 </Step>
             </Request>
             <Response/>
-            <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/prices") and (request.verb = "GET")</Condition>
+            <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/prices") and (originalRequestVerb = "GET")</Condition>
         </Flow>
     </Flows>
     <PostFlow name="PostFlow">

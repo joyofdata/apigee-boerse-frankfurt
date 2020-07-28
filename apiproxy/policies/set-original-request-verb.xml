@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-original-request-verb">
+    <DisplayName>set originalRequestVerb</DisplayName>
+    <!--
+        This is necessary b/c later for at least one flow the request verb is changed from GET to POST.
+        When the request from the target is coming back, the flow conditions are checked again!
+        But then the request.verb changed from "GET" to "POST" and the condition fails.
+        So the solution is to store the original request verb value.
+    -->
+    <AssignVariable>
+        <Name>originalRequestVerb</Name>
+        <Ref>request.verb</Ref>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
