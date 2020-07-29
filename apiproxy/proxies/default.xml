@@ -3,6 +3,15 @@
     <PreFlow name="PreFlow">
         <Request>
             <Step>
+                <Name>spike-arrest</Name>
+            </Step>
+            <Step>
+                <Name>verify-api-key</Name>
+            </Step>
+            <Step>
+                <Name>developer-quota</Name>
+            </Step>
+            <Step>
                 <Name>set-original-request-verb</Name>
             </Step>
         </Request>

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="13" name="boerse-frankfurt-de">
+<APIProxy revision="17" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1595779371943</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1595963853253</LastModifiedAt>
+    <LastModifiedAt>1596024522337</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:cecf48b7aa662dbeaa5840494b4153ada370e57ebbcabdd2f2f9d50ecde8d8a7677c13af8167c7e43508d6715655d6c526a1e5d2b6da0d6db3f9d5d9e044307d</ManifestVersion>
+    <ManifestVersion>SHA-512:bb53dcfc6a629bfc3b21aa67d9c6fe5902978c15c70e6967f80da50973262cccc6601fae6ebdb26df82dd87ce5556188698f4995d4c9fc33778345ad26b8a961</ManifestVersion>
     <Policies>
         <Policy>add-cors-headers</Policy>
         <Policy>cors-pre-flight-target-path</Policy>
+        <Policy>developer-quota</Policy>
         <Policy>index-stocks-default-values</Policy>
         <Policy>index-stocks-extract-params</Policy>
         <Policy>index-stocks-target-path-and-payload</Policy>
@@ -21,9 +22,11 @@
         <Policy>price-history-target-path-and-params</Policy>
         <Policy>set-original-request-verb</Policy>
         <Policy>set-target-copy-pathsuffix-to-false</Policy>
+        <Policy>spike-arrest</Policy>
         <Policy>stock-info-extract-params</Policy>
         <Policy>stock-info-target-path-and-params</Policy>
         <Policy>stock-info-transform-response</Policy>
+        <Policy>verify-api-key</Policy>
     </Policies>
     <ProxyEndpoints>
         <ProxyEndpoint>default</ProxyEndpoint>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Quota name="developer-quota">
+    <DisplayName>developer quota</DisplayName>
+    <Identifier ref="verifyapikey.verify-api-key.client_id"/>
+    <Interval ref="verifyapikey.verify-api-key.apiproduct.developer.quota.interval"/>
+    <TimeUnit ref="verifyapikey.verify-api-key.apiproduct.developer.quota.timeunit"/>
+    <Allow countRef="verifyapikey.verify-api-key.apiproduct.developer.quota.limit"/>
+</Quota>
