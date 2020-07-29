@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<SpikeArrest async="false" continueOnError="false" enabled="true" name="spike-arrest">
+<!-- temporarily deactivated to avoid 429 (too many requests) due to service callout in /stocks/*/prices -->
+<SpikeArrest async="false" continueOnError="false" enabled="false" name="spike-arrest">
     <DisplayName>spike arrest</DisplayName>
     <Properties/>
     <Rate>10ps</Rate>
