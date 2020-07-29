@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="17" name="boerse-frankfurt-de">
+<APIProxy revision="20" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1595779371943</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596024522337</LastModifiedAt>
+    <LastModifiedAt>1596036809963</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:bb53dcfc6a629bfc3b21aa67d9c6fe5902978c15c70e6967f80da50973262cccc6601fae6ebdb26df82dd87ce5556188698f4995d4c9fc33778345ad26b8a961</ManifestVersion>
+    <ManifestVersion>SHA-512:a429f6ce897d20da3be335b9ee12d835917142367aa8d097b5d8e7938ad317f182470cc441680ecbdf8b8a1cb1c04e9655637159be34cd9bf2fb1e515fbb585d</ManifestVersion>
     <Policies>
         <Policy>add-cors-headers</Policy>
         <Policy>cors-pre-flight-target-path</Policy>
+        <Policy>debug</Policy>
         <Policy>developer-quota</Policy>
+        <Policy>get-stock-info</Policy>
         <Policy>index-stocks-default-values</Policy>
         <Policy>index-stocks-extract-params</Policy>
         <Policy>index-stocks-target-path-and-payload</Policy>
@@ -26,6 +28,7 @@
         <Policy>stock-info-extract-params</Policy>
         <Policy>stock-info-target-path-and-params</Policy>
         <Policy>stock-info-transform-response</Policy>
+        <Policy>stocks-prices-transform-response</Policy>
         <Policy>verify-api-key</Policy>
     </Policies>
     <ProxyEndpoints>
@@ -33,8 +36,10 @@
     </ProxyEndpoints>
     <Resources>
         <Resource>openapi://association.json</Resource>
+        <Resource>jsc://debug.js</Resource>
         <Resource>jsc://index-stocks-transform-response.js</Resource>
         <Resource>jsc://stock-info-transform-response.js</Resource>
+        <Resource>jsc://stocks-prices-transform-response.js</Resource>
     </Resources>
     <Spec></Spec>
     <TargetServers/>

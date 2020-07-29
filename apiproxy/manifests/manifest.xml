@@ -3,7 +3,9 @@
     <Policies>
         <VersionInfo resourceName="add-cors-headers" version="SHA-512:8acf5759a5526c8a6a290ee91753253936f60bd9b4108092455dc82bc1acd7117e49dfdbd8f49ca65922fb21452002dd3ef61242a28ea25e84643424d52c782c"/>
         <VersionInfo resourceName="cors-pre-flight-target-path" version="SHA-512:63da09d8aa1e67174175991923d56cb3661b01e106df8ad1608ca45529ba5bfa75310d64f323a33f182bcaeaf3352dc8bbb19757e27ad5c985e0777ba46dd3f4"/>
+        <VersionInfo resourceName="debug" version="SHA-512:b9b3928c469f67d2d9107f8fa32351ee940a88843f85e99369699ecc50416b945f6fdc728e84bf3e8cd9468241f4c0a350ec229fb7d3d4341d70336ce4dff2f0"/>
         <VersionInfo resourceName="developer-quota" version="SHA-512:1cce9d325efa945e226f0000812adef68779f0bafdc77e3cbcc8ba50357084c7441201c907de443190248d187ee852ad7b8aaa4cbb5affa20e328ecd7735fa0e"/>
+        <VersionInfo resourceName="get-stock-info" version="SHA-512:832a3707bf5de200b27a81005446881bbe8e217b1339dab28efdfe1fb67970b989951181be52290befb0af0d8bfe493e0a8891ee5cf4a4567c6bf5de60a63c8d"/>
         <VersionInfo resourceName="index-stocks-default-values" version="SHA-512:11c2702aa5924483b0f927bb7f6fdceebb8f2999fe12a4827dd5d03c6ed875c6e741638a0e6d958ec3b9ce2eeb1dc15b7697597e2d98773878e8758aac6050d1"/>
         <VersionInfo resourceName="index-stocks-extract-params" version="SHA-512:31f7474dabd4921c7a8a225944b081ad35fc93fb8d80f09d9317faa887b70f72cfda5a0f3b91e714e3d8f7542dac62a210110a5163216059064f202b2de189aa"/>
         <VersionInfo resourceName="index-stocks-target-path-and-payload" version="SHA-512:7b3a7df7db2da9bb400c7cd1e1dd6993be7fe11afb09afa42924aa92b8780ca4a0b0c8057d36ee9a1228a2bc33b76953042a3c3feab31fbf8764b7290e8a06a7"/>
@@ -13,18 +15,21 @@
         <VersionInfo resourceName="price-history-target-path-and-params" version="SHA-512:16c15e0516f1f2462c46893a024c22914024ae066c0209083e7f2c53cfdf0967f617c591cc31e96b6752e61aa677c38a3cb6ef39fbcc4b8ea42317a873d65a9a"/>
         <VersionInfo resourceName="set-original-request-verb" version="SHA-512:b89d8ae375c910a3961f04b4ab1ee77a6a995bc075a20fd548b82239410df0c1b95db3275fa078694cf41ae5e5ddcd613c072b0c4c217150c78a494499c92003"/>
         <VersionInfo resourceName="set-target-copy-pathsuffix-to-false" version="SHA-512:536533ba4d3946b22fc61db8512e370554e84fab42a0d0a3d1ad45a5f3ee5872a2fd0d00f9f0b5b836047265ec72423b4bca2129d8b9777cc83459746e3724f0"/>
-        <VersionInfo resourceName="spike-arrest" version="SHA-512:c3194e509f1ce149da71a0182aa07956d592cf48ea2c6f80e26e07bb493b1a93d93494d0631f2746e7b6d0c9543894a823bf70031d5b5a700c8fd3eac82598f3"/>
+        <VersionInfo resourceName="spike-arrest" version="SHA-512:850571eded60f3089fa1831d781757257e3195a85a3f3d3cba42451395eceaad668f5feb0e6576b8a92e415bbbc7cf21b3c76ffbae19800d834feeea17e8c277"/>
         <VersionInfo resourceName="stock-info-extract-params" version="SHA-512:87f00f1d8e80fe94dfeeb7c0f6ff5e0a7c7e1f1b4a92dbbc4b57a697885354dbefda02ce0ff61a5673ce7912f83954f492a3be3b1d808f3f8a3c6b4e5b1b1c61"/>
         <VersionInfo resourceName="stock-info-target-path-and-params" version="SHA-512:8ebdabe69ce6f4b0edde342cc30b5314eb0e4085089ce1641819e69887b61eba738681d806be565dcbbbd3aa47d74ca0dd549c7d17c5e8d746cb2b01fdaace59"/>
         <VersionInfo resourceName="stock-info-transform-response" version="SHA-512:7ee047e87d0c6a3fabf0fba196c156d8c5ac7e9dde8bb260ef4413ec76c5c6efcd2bd54a0e3474a4431d75fa939c9194ab207db4294aee70107fe5246a270591"/>
+        <VersionInfo resourceName="stocks-prices-transform-response" version="SHA-512:9959ad000cc9f0fd05892e1cfe7a1a8bd813d676ad517fd008a0e5b673c26bb32c0dbf943f0e7e1bbffc56fc7288b1514aa3eb972bb6333097967897b152084a"/>
         <VersionInfo resourceName="verify-api-key" version="SHA-512:6f43b517520ad9fb2eb90640913ad25f4fd7a2b1e336263458fcee6442cb6c147a77f0a1d1b2804c65972538534c28720e7b148e24dda88bf855c33c2ac5fa02"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:7f97c7d0811ae5f82649348348aac6e700bfed6b1113e2e8d086028252709a8431f1733b78e31ed8c03a918106c075c212f983d344910a673707190f3a9ae327"/>
+        <VersionInfo resourceName="default" version="SHA-512:015e9d02b746e44c64aaf3385d07c48df209cd49f169de07de547f69c7f1b2613e6f7924d1afb998a2b5e7580c474a917772aba352066db5dbaa5f035996ee79"/>
     </ProxyEndpoints>
     <Resources>
+        <VersionInfo resourceName="jsc://debug.js" version="SHA-512:f766bf8c557c0c235ff35035c2d5d404854fed5de7c54c46fefa39b95c0c3fe869ae17c06c9f37dd1441c0ebdad011915e1ce7712775780e268164386908d1a8"/>
         <VersionInfo resourceName="jsc://index-stocks-transform-response.js" version="SHA-512:26a3cb52572b5c99d9726d6f3c1bbd49df0d03921fb2387e293e47079adecc475c358fc07dc904e6cc0eb023278a325dc96d21da6c0e6bb75af4fa9fe0fa6782"/>
         <VersionInfo resourceName="jsc://stock-info-transform-response.js" version="SHA-512:681810093237d9b9d1d715f8d7c6cb53f9674617b73ba368b5e48e1ea594c7fe7d33c27b8b22dc381d1aa25fa26296a3aba3269041a3b6e76fe7620a25d612f8"/>
+        <VersionInfo resourceName="jsc://stocks-prices-transform-response.js" version="SHA-512:d6d24bc61dbf257ba469fcbe089efdbd0eb37ffff2257182b9132e5b032b798fa916d42684ae010582500910b6f1119a30616ba4452392b46680709d804a8864"/>
         <VersionInfo resourceName="openapi://association.json" version="SHA-512:153775e53f6ee0fdfc54ea2cafdb4318f6ddccfbc56ff83351304f89fafa673b61d20a92e1a247d32ee257a70381e030897dd13325aa688645383601504469a9"/>
     </Resources>
     <SharedFlows/>

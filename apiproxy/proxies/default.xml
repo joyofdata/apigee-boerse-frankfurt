@@ -88,7 +88,14 @@
                     <Name>price-history-target-path-and-params</Name>
                 </Step>
             </Request>
-            <Response/>
+            <Response>
+                <Step>
+                    <Name>get-stock-info</Name>
+                </Step>
+                <Step>
+                    <Name>stocks-prices-transform-response</Name>
+                </Step>
+            </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/prices") and (originalRequestVerb = "GET")</Condition>
         </Flow>
     </Flows>
