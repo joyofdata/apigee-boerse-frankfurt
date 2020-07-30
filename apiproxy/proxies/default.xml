@@ -90,15 +90,13 @@
             </Request>
             <Response>
                 <Step>
-                    <Name>lc-stock-info</Name>
+                    <Name>lc-stock-info-content</Name>
                 </Step>
                 <Step>
                     <Name>get-stock-info</Name>
-                    <Condition>lookupcache.lc-stock-info.cachehit = "false"</Condition>
                 </Step>
                 <Step>
-                    <Name>pc-stock-info</Name>
-                    <Condition>lookupcache.lc-stock-info.cachehit = "false"</Condition>
+                    <Name>pc-stock-info-content</Name>
                 </Step>
                 <Step>
                     <Name>stocks-prices-transform-response</Name>
@@ -109,7 +107,11 @@
     </Flows>
     <PostFlow name="PostFlow">
         <Request/>
-        <Response/>
+        <Response>
+            <Step>
+                <Name>FC-optional-json-to-xml</Name>
+            </Step>
+        </Response>
     </PostFlow>
     <HTTPProxyConnection>
         <BasePath>/boerse-frankfurt-de/v1/</BasePath>

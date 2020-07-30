@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="22" name="boerse-frankfurt-de">
+<APIProxy revision="23" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1595779371943</CreatedAt>
+    <CreatedAt>1596120941224</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596039505537</LastModifiedAt>
+    <LastModifiedAt>1596120941224</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:cf57d81a4db79ec8a78c500cbd0cd6a0411180c86b09f2d40951791affcd0ea64cf96e5ad592a631e31590b952d8c7680d042866d09476549f5af8de77b8cef2</ManifestVersion>
+    <ManifestVersion>SHA-512:30310d5a2a25de8c4c065623b817fcdc6c4b96132077f6089f7508aa6bd0dc6f561b1fe1ab8148f1934c036c4046191306f8b7123c293eccc7c7fb048438ee80</ManifestVersion>
     <Policies>
+        <Policy>FC-optional-json-to-xml</Policy>
         <Policy>add-cors-headers</Policy>
         <Policy>cors-pre-flight-target-path</Policy>
         <Policy>debug</Policy>
         <Policy>developer-quota</Policy>
+        <Policy>extract-desired-format</Policy>
         <Policy>get-stock-info</Policy>
         <Policy>index-stocks-default-values</Policy>
         <Policy>index-stocks-extract-params</Policy>
         <Policy>index-stocks-target-path-and-payload</Policy>
         <Policy>index-stocks-transform-response</Policy>
-        <Policy>lc-stock-info</Policy>
-        <Policy>pc-stock-info</Policy>
+        <Policy>json-to-xml</Policy>
+        <Policy>lc-stock-info-content</Policy>
+        <Policy>pc-stock-info-content</Policy>
         <Policy>price-history-default-values</Policy>
         <Policy>price-history-extract-params</Policy>
         <Policy>price-history-target-path-and-params</Policy>
