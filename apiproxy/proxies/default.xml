@@ -4,6 +4,11 @@
         <Request>
             <Step>
                 <Name>spike-arrest</Name>
+                <!-- 
+                    If x-skip-spike-arrest is set to the correct value, then skip the policy.
+                    This is necessary for Service Callouts to this proxy where you have to set this specific header.
+                -->
+                <Condition>request.header.x-skip-spike-arrest != "replace with something random"</Condition>
             </Step>
             <Step>
                 <Name>verify-api-key</Name>
