@@ -95,13 +95,15 @@
             </Request>
             <Response>
                 <Step>
-                    <Name>lc-stock-info-content</Name>
+                    <Name>lc-stock-info</Name>
                 </Step>
                 <Step>
                     <Name>get-stock-info</Name>
+                    <Condition>lookupcache.lc-stock-info.cachehit = "false"</Condition>
                 </Step>
                 <Step>
-                    <Name>pc-stock-info-content</Name>
+                    <Name>pc-stock-info</Name>
+                    <Condition>lookupcache.lc-stock-info.cachehit = "false"</Condition>
                 </Step>
                 <Step>
                     <Name>stocks-prices-transform-response</Name>
