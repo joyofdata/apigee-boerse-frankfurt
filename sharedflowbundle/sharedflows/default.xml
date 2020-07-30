@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>extract-desired-format</Name>
+    </Step>
+    <Step>
+        <Name>json-to-xml</Name>
+        <Condition>apigee.format = "xml"</Condition>
+    </Step>
+</SharedFlow>
