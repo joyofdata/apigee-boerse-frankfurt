@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="fault-rule-invalid-x-api-key-header">
+    <DisplayName>fault rule - invalid x-api-key header</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload contentType="application/json">{"messages":["The API Key you provided is not valid."]}</Payload>
+        <StatusCode>401</StatusCode>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

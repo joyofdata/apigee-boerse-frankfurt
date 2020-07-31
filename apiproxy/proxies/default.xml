@@ -120,6 +120,23 @@
             </Step>
         </Response>
     </PostFlow>
+    <FaultRules>
+        <FaultRule name="verify-api-key-failed">
+            <Step>
+                <Name>fault-rule-no-x-api-key-header</Name>
+                <Condition>request.header.x-api-key = null</Condition>
+            </Step>
+            <Step>
+                <Name>fault-rule-invalid-x-api-key-header</Name>
+                <!-- 
+                    without this complementary condition the step would always be executed 
+                    and overwrite the previous' step's response 
+                -->
+                <Condition>request.header.x-api-key != null</Condition>
+            </Step>
+            <Condition>oauthV2.verify-api-key.failed = "true"</Condition>
+        </FaultRule>
+    </FaultRules>
     <HTTPProxyConnection>
         <BasePath>/boerse-frankfurt-de/v1/</BasePath>
         <VirtualHost>secure</VirtualHost>
