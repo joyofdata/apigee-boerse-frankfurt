@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest name="manifest">
     <Policies>
+        <VersionInfo resourceName="FC-generic-parameter-check" version="SHA-512:243be51514668c9830cfdd75a843c0aa2643d923343e823544e2a247018f95a4193a6ec477d3e9a3fd104800414448c8994acf5faea3d06a8397635fae9bb894"/>
         <VersionInfo resourceName="FC-optional-json-to-xml" version="SHA-512:137ddd65117bd634a35846da8394a8bc4560d436fcecf751757b9aad82ee55fac150b44382515ea76fcdc3290be0752f7eb23b967d604bedb34d56ef30a87b65"/>
         <VersionInfo resourceName="add-cors-headers" version="SHA-512:8acf5759a5526c8a6a290ee91753253936f60bd9b4108092455dc82bc1acd7117e49dfdbd8f49ca65922fb21452002dd3ef61242a28ea25e84643424d52c782c"/>
         <VersionInfo resourceName="cors-pre-flight-target-path" version="SHA-512:63da09d8aa1e67174175991923d56cb3661b01e106df8ad1608ca45529ba5bfa75310d64f323a33f182bcaeaf3352dc8bbb19757e27ad5c985e0777ba46dd3f4"/>
@@ -28,7 +29,7 @@
         <VersionInfo resourceName="verify-api-key" version="SHA-512:6f43b517520ad9fb2eb90640913ad25f4fd7a2b1e336263458fcee6442cb6c147a77f0a1d1b2804c65972538534c28720e7b148e24dda88bf855c33c2ac5fa02"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:f6ce76999d443230ef18deb5434baca4b43c0d710ef55117c899cf1d371d4d1735054b3c3d11815b9d87ea3d702049f5278a617dd4b578306137e6e8a9b02976"/>
+        <VersionInfo resourceName="default" version="SHA-512:3679f691db0b397238e2b150e9c26c6c2e9a009202de6f1cacf027f62bd5d4b8b1bd1eaeb7a5d135a43a4b69e3e4f95ce1dcd80f27347074a3509a894d67e62e"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://debug.js" version="SHA-512:f766bf8c557c0c235ff35035c2d5d404854fed5de7c54c46fefa39b95c0c3fe869ae17c06c9f37dd1441c0ebdad011915e1ce7712775780e268164386908d1a8"/>

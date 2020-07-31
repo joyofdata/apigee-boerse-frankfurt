@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="26" name="boerse-frankfurt-de">
+<APIProxy revision="28" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1595779371943</CreatedAt>
+    <CreatedAt>1596227676617</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596224611487</LastModifiedAt>
+    <LastModifiedAt>1596227676617</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:58c59c439bfdcee977c82d1afb37d1f17ee9c353c6b53e45c4811fa3e86b615ab83aa67133f215c9ab974bba4f8d5a3d6d8311edb6e2cc5d56e0ee77b5d3c9a3</ManifestVersion>
+    <ManifestVersion>SHA-512:d75ec5cafecc013c660a269546e74a12f0ad42d6c244f5f120b9b183d18901e79b1429ed2292f5b8c3c97d3786c5590df88bf619ac88d2cef3fa4ddb765be966</ManifestVersion>
     <Policies>
+        <Policy>FC-generic-parameter-check</Policy>
         <Policy>FC-optional-json-to-xml</Policy>
         <Policy>add-cors-headers</Policy>
         <Policy>cors-pre-flight-target-path</Policy>

@@ -48,6 +48,9 @@
                     <Name>stock-info-extract-params</Name>
                 </Step>
                 <Step>
+                    <Name>FC-generic-parameter-check</Name>
+                </Step>
+                <Step>
                     <Name>stock-info-target-path-and-params</Name>
                 </Step>
             </Request>
@@ -64,6 +67,9 @@
             <Request>
                 <Step>
                     <Name>index-stocks-extract-params</Name>
+                </Step>
+                <Step>
+                    <Name>FC-generic-parameter-check</Name>
                 </Step>
                 <Step>
                     <Name>index-stocks-default-values</Name>
@@ -85,6 +91,9 @@
             <Request>
                 <Step>
                     <Name>price-history-extract-params</Name>
+                </Step>
+                <Step>
+                    <Name>FC-generic-parameter-check</Name>
                 </Step>
                 <Step>
                     <Name>price-history-default-values</Name>

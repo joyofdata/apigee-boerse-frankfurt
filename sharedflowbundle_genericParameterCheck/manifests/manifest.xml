@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="RF-wrong-parameter-value" version="SHA-512:0de77d0bd28038f66f0aa55a00759dd120e11275cbf3b467df969d99b7734a1f8b4e1d2519e38f6f4ccab81636bffd35516b44f7f590234d7c08f845a356059f"/>
+    </Policies>
+    <ProxyEndpoints/>
+    <Resources/>
+    <SharedFlows>
+        <VersionInfo resourceName="default" version="SHA-512:7b758ac43b9295952d6301984f3cdcf509a4dbde71f19de12db73ff3871510b2115c5fc0958db7d4789290db8a67b5247e667451ae4426113155d89ad9f4ea62"/>
+    </SharedFlows>
+    <TargetEndpoints/>
+</Manifest>

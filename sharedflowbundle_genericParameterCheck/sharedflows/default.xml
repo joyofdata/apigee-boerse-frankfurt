@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>RF-wrong-parameter-value</Name>
+        <Condition>
+               (apigee.isin != null       and not apigee.isin ~~ "[A-Z]{2}[0-9]{10}")
+            or (apigee.offset != null     and not apigee.offset ~~ "[0-9]+")
+            or (apigee.limit != null      and not apigee.limit ~~ "[0-9]+")
+            or (apigee.lang != null       and not apigee.lang ~~ "(de|en)")
+            or (apigee.sort_order != null and not apigee.sort_order ~~ "(ASC|DESC)")
+            or (apigee.min_date != null   and not apigee.min_date ~~ "[0-9]{4}-[0-9]{2}-[0-9]{2}")
+            or (apigee.max_date != null   and not apigee.max_date ~~ "[0-9]{4}-[0-9]{2}-[0-9]{2}")
+        </Condition>
+    </Step>
+</SharedFlow>

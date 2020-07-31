@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="2" name="genericParameterCheck">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1596227533712</CreatedAt>
+    <CreatedBy>person@imap.cc</CreatedBy>
+    <Description>undefined</Description>
+    <DisplayName>genericParameterCheck</DisplayName>
+    <LastModifiedAt>1596227533712</LastModifiedAt>
+    <LastModifiedBy>person@imap.cc</LastModifiedBy>
+    <ManifestVersion>SHA-512:241c2249d89ea6eb8f1c1af6965401bb22bee42ebc47fd5b50859f4a50359a33a68768ad7a56c20df0db40a21d9b73791381f1f068168f917dd09a9ae58aff45</ManifestVersion>
+    <Policies>
+        <Policy>RF-wrong-parameter-value</Policy>
+    </Policies>
+    <Resources/>
+    <Spec></Spec>
+    <subType>SharedFlow</subType>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+</SharedFlowBundle>
