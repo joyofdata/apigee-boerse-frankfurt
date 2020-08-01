@@ -12,12 +12,15 @@
             </Step>
             <Step>
                 <Name>verify-api-key</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
             <Step>
                 <Name>developer-quota</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
             <Step>
                 <Name>set-original-request-verb</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
         </Request>
         <Response/>
@@ -25,21 +28,12 @@
     <Flows>
         <Flow name="OptionsPreFlight">
             <Request>
-                <!--
-                    In case of an OPTIONS pre-flight request none of the flows is activated.
-                    To avoid an error because of targetPath variable being undefined we set
-                    it to an empty string here.
-                -->
                 <Step>
-                    <Name>cors-pre-flight-target-path</Name>
+                    <Name>add-cors-headers</Name>
                 </Step>
             </Request>
-            <Response>
-                <!--
-                    The CORS support headers are set for all transactions at TargetEndpoint/PreFlow.
-                -->
-            </Response>
-            <Condition>request.verb == "OPTIONS" AND request.header.origin != null AND request.header.Access-Control-Request-Method != null</Condition>
+            <Response/>
+            <Condition>request.verb = "OPTIONS"</Condition>
         </Flow>
         <Flow name="StocksInfo">
             <Description>retrieve stock info</Description>
@@ -126,6 +120,7 @@
         <Response>
             <Step>
                 <Name>FC-optional-json-to-xml</Name>
+                <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
         </Response>
     </PostFlow>
@@ -150,6 +145,9 @@
         <BasePath>/boerse-frankfurt-de/v1/</BasePath>
         <VirtualHost>secure</VirtualHost>
     </HTTPProxyConnection>
+    <RouteRule name="nullRoute">
+        <Condition>request.verb = "OPTIONS"</Condition>
+    </RouteRule>
     <RouteRule name="default">
         <TargetEndpoint>default</TargetEndpoint>
     </RouteRule>

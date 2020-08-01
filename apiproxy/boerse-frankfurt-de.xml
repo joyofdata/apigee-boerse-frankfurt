@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="28" name="boerse-frankfurt-de">
+<APIProxy revision="29" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1596227676617</CreatedAt>
+    <CreatedAt>1595779371943</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596227676617</LastModifiedAt>
+    <LastModifiedAt>1596280838511</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:d75ec5cafecc013c660a269546e74a12f0ad42d6c244f5f120b9b183d18901e79b1429ed2292f5b8c3c97d3786c5590df88bf619ac88d2cef3fa4ddb765be966</ManifestVersion>
+    <ManifestVersion>SHA-512:d2dc46136cff959128c274962306025b6c3903c43d0967148a797ce95c6f7cfa507bd471515d7043d6ab755d77ea5afa92d14feb162c10aa9e89cdcc33dc3855</ManifestVersion>
     <Policies>
         <Policy>FC-generic-parameter-check</Policy>
         <Policy>FC-optional-json-to-xml</Policy>
         <Policy>add-cors-headers</Policy>
-        <Policy>cors-pre-flight-target-path</Policy>
         <Policy>debug</Policy>
         <Policy>developer-quota</Policy>
         <Policy>fault-rule-invalid-x-api-key-header</Policy>
