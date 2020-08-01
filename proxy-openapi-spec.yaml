@@ -1,4 +1,4 @@
-openapi: 3.0.2
+: 3.0.2
 servers:
   - description: prod
     url: https://person-eval-prod.apigee.net/boerse-frankfurt-de/v1/
@@ -177,7 +177,17 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
+
+security:
+  - ApiKeyAuth: []
+
 components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: x-api-key
+
   schemas:
     StocksPricesResponse:
       type: object
