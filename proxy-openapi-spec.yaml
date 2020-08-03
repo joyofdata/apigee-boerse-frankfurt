@@ -1,4 +1,4 @@
-: 3.0.2
+openapi: 3.0.2
 servers:
   - description: prod
     url: https://person-eval-prod.apigee.net/boerse-frankfurt-de/v1/
@@ -21,6 +21,14 @@ paths:
           required: true
           description: ISIN
           example: DE0005557508
+        - in: query
+          name: format
+          schema:
+            type: string
+            enum: [json, xml]
+          required: false
+          description: desired response format
+          example: xml
       responses:
         '200':
           description: OK
@@ -81,6 +89,7 @@ paths:
           schema:
             type: string
             default: "ASC"
+            enum: [ASC, DESC]
         - in: query
           name: lang
           description: language
@@ -88,6 +97,14 @@ paths:
           schema:
             type: string
             default: "en"
+        - in: query
+          name: format
+          schema:
+            type: string
+            enum: [json, xml]
+          required: false
+          description: desired response format
+          example: xml
 
       responses:
         '200':
@@ -158,6 +175,14 @@ paths:
             type: string
             format: date
           example: "2020-03-31"
+        - in: query
+          name: format
+          schema:
+            type: string
+            enum: [json, xml]
+          required: false
+          description: desired response format
+          example: xml
       responses:
         '200':
           description: OK
