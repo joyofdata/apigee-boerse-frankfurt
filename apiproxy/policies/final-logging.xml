@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging name="final-logging">
+    <DisplayName>final logging</DisplayName>
+    <Syslog>
+        <Message>
+            [{private.loggly.token}@41058 tag="{organization.name}.{apiproxy.name}.{environment.name}"]
+            {
+                "apiProxyName": "{apiproxy.name}",
+                "apiProxyRevision": "{apiproxy.revision}",
+                "proxyBasePath": "{proxy.basepath}",
+                "proxyClientIp": "{proxy.client.ip}",
+                "proxyName": "{proxy.name}",
+                "proxyPathSuffix": "{proxy.pathsuffix}",
+                "proxyUrl": "{proxy.url}",
+                "appBasePath": "{application.basepath}",
+                "clientIp": "{client.ip}",
+                "env": "{environment.name}",
+                "method": "{request.verb}",
+                "path": "{request.path}",
+                "queryString": "{request.querystring}",
+                "error": {
+                    "isError": {isError},
+                    "message": "{escapeJSON(error.message)}",
+                    "content": "{escapeJSON(error.content)}",
+                    "statusCode": "{error.status.code}",
+                },
+            }
+        </Message>
+        <Host>logs-01.loggly.com</Host>
+        <Port>6514</Port>
+        <Protocol>TCP</Protocol>
+        <FormatMessage>true</FormatMessage>
+        <SSLInfo>
+            <Enabled>true</Enabled>
+        </SSLInfo>
+    </Syslog>
+</MessageLogging>

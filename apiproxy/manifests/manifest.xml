@@ -8,6 +8,8 @@
         <VersionInfo resourceName="developer-quota" version="SHA-512:1cce9d325efa945e226f0000812adef68779f0bafdc77e3cbcc8ba50357084c7441201c907de443190248d187ee852ad7b8aaa4cbb5affa20e328ecd7735fa0e"/>
         <VersionInfo resourceName="fault-rule-invalid-x-api-key-header" version="SHA-512:52499d7afe6f3dd5a017c9d05477ad99a06e68c9784bb11bc28476b0152965bbeb4f6b5ef741d97d04a3971023ab3fc2cffcbcf0be155e76572d97f82165c095"/>
         <VersionInfo resourceName="fault-rule-no-x-api-key-header" version="SHA-512:97e0628acd076871a2ef6d007b2cee6b489fd4f3587c797426dd437f25e2340663c69b35017013309ad35ec4e4cb911b22aa4f84137f031f081d0332a3e3ea5b"/>
+        <VersionInfo resourceName="final-logging" version="SHA-512:336a6e4ca275d4bac896434679ff7312180a84c9663db183e18d1ece5381a5c8ba3ca986636653ca5cfeea03ff9e58538877bc54828772996e2161626ff69bd8"/>
+        <VersionInfo resourceName="get-loggly-token" version="SHA-512:a52498e7d196327019ad0866f0b9f8f87eaf073c202f272ccbf5a003a57e844dd1becd25600ab2c730022422c183e3d65e93fbfd8162f891a835d7a39da7bfa0"/>
         <VersionInfo resourceName="get-stock-info" version="SHA-512:91f27fe4adc15e471816c549a6c31760d2e00cb44f433c0622115c75a60dcc58ee7beb98ff2ada20740437ccbc6b4c92e84202565256df6e663127c48cfb73ba"/>
         <VersionInfo resourceName="index-stocks-default-values" version="SHA-512:11c2702aa5924483b0f927bb7f6fdceebb8f2999fe12a4827dd5d03c6ed875c6e741638a0e6d958ec3b9ce2eeb1dc15b7697597e2d98773878e8758aac6050d1"/>
         <VersionInfo resourceName="index-stocks-extract-params" version="SHA-512:31f7474dabd4921c7a8a225944b081ad35fc93fb8d80f09d9317faa887b70f72cfda5a0f3b91e714e3d8f7542dac62a210110a5163216059064f202b2de189aa"/>
@@ -28,7 +30,7 @@
         <VersionInfo resourceName="verify-api-key" version="SHA-512:6f43b517520ad9fb2eb90640913ad25f4fd7a2b1e336263458fcee6442cb6c147a77f0a1d1b2804c65972538534c28720e7b148e24dda88bf855c33c2ac5fa02"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:cd6766136b62ce4e410974b6f752d1e6ce01ef3f66d7015bec23446bb29f64c3cf3b7856acaa3ad8a2fedb2de1d100c92f6ff31d1eabdde892fdadaf0ba2bd14"/>
+        <VersionInfo resourceName="default" version="SHA-512:04d8054469043ea38972b3e3d21dbdd895e0f5afe301154bbdef538e18f2adbdd1bf546d1b6f4986d57bb3f338973f59c6b8aa72abaa04279047ed9e2264c6fd"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://debug.js" version="SHA-512:f766bf8c557c0c235ff35035c2d5d404854fed5de7c54c46fefa39b95c0c3fe869ae17c06c9f37dd1441c0ebdad011915e1ce7712775780e268164386908d1a8"/>

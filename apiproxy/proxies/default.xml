@@ -22,6 +22,9 @@
                 <Name>set-original-request-verb</Name>
                 <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
+            <Step>
+                <Name>get-loggly-token</Name>
+            </Step>
         </Request>
         <Response/>
     </PreFlow>
@@ -124,6 +127,14 @@
             </Step>
         </Response>
     </PostFlow>
+    <PostClientFlow>
+        <Step/>
+        <Response>
+            <Step>
+                <Name>final-logging</Name>
+            </Step>
+        </Response>
+    </PostClientFlow>
     <FaultRules>
         <FaultRule name="verify-api-key-failed">
             <Step>
