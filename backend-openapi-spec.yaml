@@ -1,8 +1,5 @@
 openapi: 3.0.2
 servers:
-# Added by API Auto Mocking Plugin
-  - description: SwaggerHub API Auto Mocking
-    url: https://virtserver.swaggerhub.com/raffael/boerse-frankfurt.de/1.0.0
   - description: api.boerse-frankfurt.de
     url: https://api.boerse-frankfurt.de/
 info:
