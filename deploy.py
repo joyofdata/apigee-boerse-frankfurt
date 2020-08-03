@@ -56,3 +56,6 @@ req = requests.request(
         "scopes": []
     }
 )
+
+# create encrypted KVM and store value for loggly token
+# ...
