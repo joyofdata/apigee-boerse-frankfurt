@@ -125,6 +125,9 @@
                 <Name>FC-optional-json-to-xml</Name>
                 <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
+            <Step>
+                <Name>collect-stats</Name>
+            </Step>
         </Response>
     </PostFlow>
     <PostClientFlow>
