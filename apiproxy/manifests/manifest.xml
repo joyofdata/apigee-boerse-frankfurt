@@ -4,9 +4,6 @@
         <VersionInfo resourceName="FC-generic-parameter-check" version="SHA-512:2339900ec6c67940db20d7c78deb08fcebc5d0cf810daa75456f0d26b430aa0764fa12d3b1fb269222e58683dacc930ea2f3880b295b31b6a8a85dab689e7438"/>
         <VersionInfo resourceName="FC-optional-json-to-xml" version="SHA-512:6c1f77c9db637a047b2df60c179734367c50c118f38bfaa1573c3d03deef55044c6dd9acc2c08811478447d7d0ccf4ced4b18c918d2cc8a94406f039b2d7a75c"/>
         <VersionInfo resourceName="add-cors-headers" version="SHA-512:0bc901c4513a509ebd4d748170455775d0cc40bbf3d61bea01bf55bdf1fae8bd1590c11156afe790180c94e36b0a817d607a02fa710bddfd372b476bb1b03f4f"/>
-        <VersionInfo resourceName="collect-stats" version="SHA-512:29dd51303731d9410c431f1dd7d365cc1df6ea5840e5d29a46b323c00de06dd640eb79ebde58f5cc4674820c93b9f08754c0838fd338581e709a3995764ecfd3"/>
-        <VersionInfo resourceName="debug" version="SHA-512:620495a9186a893c4247f96e7458125ae1d994cbb37819dfafbbce2df57d0ce020e943bef6bde5476fb3eff0692d3d2d40f4e52a816f13799482bb28739cbc79"/>
-        <VersionInfo resourceName="developer-quota" version="SHA-512:a2d488ff2a29aa28c24befa43b207711a22a95b3a2cbe80a5e6f6ce139e87f74f32190a757e93836bb3c6951fc9578d93e6b45d6000860bfffd4fbbb0a1158cb"/>
         <VersionInfo resourceName="fault-rule-invalid-x-api-key-header" version="SHA-512:f73bcd88389dc5e2d92e54e804fb33a2ad18e5c70cc21c259c7434a8f5c286c3e6dcfa6d2e4d4e55fe24d5d4c78479ebf82a4ce80b9d07874f21a2439d26d0d5"/>
         <VersionInfo resourceName="fault-rule-no-x-api-key-header" version="SHA-512:573178d484e7c2420f7ff9dc56a9af07c2c1f20e2a22c610e0a7d09e86ecdb9669df6c712123538df00afa873c068230dcdd5832b2182a4b4cd25784026cb592"/>
         <VersionInfo resourceName="final-logging" version="SHA-512:58acde7b7e0f0638b655a88126206102a26d7e108b3f96fa91e0bb364784d54a6922a0d32517a4c23c06aa1a3a8b94ae4e8cf74173d7c6dad3922f718317fd92"/>
@@ -21,9 +18,11 @@
         <VersionInfo resourceName="price-history-default-values" version="SHA-512:6ea5d36b6e6054de52ff4cc6f85295ac17b02f0fb8b7f9b96d7cac19e4d4598bd684e879e979b9581ff94d72ae58f2b132bcce19ed68a634efcebef2273e240c"/>
         <VersionInfo resourceName="price-history-extract-params" version="SHA-512:84c8e99d7b20adb82a6949ba0abec3bb4b635f7f9a8a67a02f130008741d427b5801125748df5670daec229b7cc1e5d65518bee074aa148594b42cfb5c5b2141"/>
         <VersionInfo resourceName="price-history-target-path-and-params" version="SHA-512:b205918a1ddd165d8cf407ffbccbbf8c907812c313a4c4b64824213371aa7b35d99007549c1ab7c61362d055c32978346bd50c74540dd9ddf65c8b2bc891245b"/>
+        <VersionInfo resourceName="quota-developer" version="SHA-512:521fc5b8165bb54f6cfed12caab999f83c8dbb06e3d48f4ab0db34f42dc5f2949ce26808c846a90bdd2b0fba389e9e8d7c1992ff0c63b0713d72dfb44a4ffbcd"/>
         <VersionInfo resourceName="set-original-request-verb" version="SHA-512:4c3f3ba7c46b1cd9e028cec44929601a7abc890b434c1a468a9a540d5768c7d5414f040cdbdff75bc18034048faf1a819b9165d5c921ab78f30db15e61c51ac3"/>
         <VersionInfo resourceName="set-target-copy-pathsuffix-to-false" version="SHA-512:c5fd59d6eddf3b15d75fdfcf49b48ff22b1835d9e2add11740c02dc691e3b89dc37837d105ed03ac30a2151dd3bf45c34e9d4c22567ee50567f28455eb0c0dc2"/>
         <VersionInfo resourceName="spike-arrest" version="SHA-512:b0c8eda91b7f9faca3b264dbba57c12f6b7553d600b3adba872e96fd20c195dc505b217d3fcc1079d09e4e27d36b34f31ac2c31e51764e04c6b3552f033eab8e"/>
+        <VersionInfo resourceName="stats-collect-isin" version="SHA-512:304dd82d597e6b2c2009f5b9c78bc5cb931b9ee742bf2a8c30eb73edc2ce7cc3c460171f9a42dff43d5b50eaa62892de880ad31ddd393c6a30fe91c1b287be8c"/>
         <VersionInfo resourceName="stock-info-extract-params" version="SHA-512:a98470e5e4c6fbcbb3e0f8ead39750eaaca49cdc8ed25af1052197558a666e2750fd534403f237a3b3c31577a5a449fce645d564c0ca7b0946f630671eaac3cb"/>
         <VersionInfo resourceName="stock-info-target-path-and-params" version="SHA-512:956d94ff3437e0a776ef661981e5be80e0d479b5449ed2832a312b6fc7fa45f1a82f14fa55f19215077041ca6ad86851c7171d8e7095d0d909b53e11a3ccc4eb"/>
         <VersionInfo resourceName="stock-info-transform-response" version="SHA-512:828cb2cb9edde9dff73a61a3297b71cd03c07a8634f6f0c896cc2a2ca3262b1eebe12a1365b6121352c8ef56409671ffd73f0e0db276b3d3484db282e1e14e68"/>
@@ -31,7 +30,7 @@
         <VersionInfo resourceName="verify-api-key" version="SHA-512:c1e28e1fd458e03d2139de0e98c1e9620a5f7946ded77fc57d66fc569300d785168c4cc1d4876cd8f79fa6e29bc04e6d9787ebdf62a3ff04741c9378df2185ef"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:60f6eef1fa73367ebbb26dc24e728f4eb0dcebd92d2c5be2d3def68f08367eed48db8ffc52850ea5cd1dd41c6be07aba87560340a1d3a10565e4c959e2b30426"/>
+        <VersionInfo resourceName="default" version="SHA-512:f9293c070f3de596225ef04a9751f5ab5d7b65be6c76cc20d10662bdc96211c06bfba1ebe3f58e4ae032d9279f10b21eb8d772e0461500124170db94b78a28ac"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://debug.js" version="SHA-512:f766bf8c557c0c235ff35035c2d5d404854fed5de7c54c46fefa39b95c0c3fe869ae17c06c9f37dd1441c0ebdad011915e1ce7712775780e268164386908d1a8"/>

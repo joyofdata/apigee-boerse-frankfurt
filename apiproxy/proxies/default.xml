@@ -15,7 +15,7 @@
                 <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
             <Step>
-                <Name>developer-quota</Name>
+                <Name>quota-developer</Name>
                 <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
             <Step>
@@ -126,7 +126,7 @@
                 <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
             <Step>
-                <Name>collect-stats</Name>
+                <Name>stats-collect-isin</Name>
             </Step>
         </Response>
     </PostFlow>

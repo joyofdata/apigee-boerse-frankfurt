@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Quota name="developer-quota">
+<Quota name="quota-developer">
+    <Distributed>true</Distributed>
     <Identifier ref="verifyapikey.verify-api-key.client_id"/>
     <Interval ref="verifyapikey.verify-api-key.apiproduct.developer.quota.interval"/>
     <TimeUnit ref="verifyapikey.verify-api-key.apiproduct.developer.quota.timeunit"/>
