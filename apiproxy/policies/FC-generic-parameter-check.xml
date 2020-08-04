@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <FlowCallout async="false" continueOnError="false" enabled="true" name="FC-generic-parameter-check">
-    <DisplayName>FC - generic parameter check</DisplayName>
-    <FaultRules/>
-    <Properties/>
     <SharedFlowBundle>genericParameterCheck</SharedFlowBundle>
 </FlowCallout>

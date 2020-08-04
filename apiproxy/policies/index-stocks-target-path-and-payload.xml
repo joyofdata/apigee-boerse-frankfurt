@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="index-stocks-target-path-and-payload">
-    <DisplayName>index stocks - set target path and payload</DisplayName>
-    <Properties/>
     <Set>
         <Verb>POST</Verb>
         <Payload contentType="application/json">

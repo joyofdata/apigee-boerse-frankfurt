@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="stock-info-target-path-and-params">
-    <DisplayName>stock info - set target path and query params</DisplayName>
     <Set>
         <QueryParams>
             <QueryParam name="isin">{apigee.isin}</QueryParam>

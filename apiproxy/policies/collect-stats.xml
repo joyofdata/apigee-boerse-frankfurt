@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <StatisticsCollector async="false" continueOnError="false" enabled="true" name="collect-stats">
-    <DisplayName>collect stats</DisplayName>
-    <Properties/>
     <Statistics>
         <Statistic name="request-isin" ref="apigee.isin" type="string">unknown</Statistic>
     </Statistics>

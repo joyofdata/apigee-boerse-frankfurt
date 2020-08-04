@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <LookupCache async="false" continueOnError="false" enabled="true" name="lc-stock-info">
-    <DisplayName>LC - stockInfo</DisplayName>
-    <Properties/>
     <CacheKey>
         <Prefix>stockInfo</Prefix>
         <KeyFragment ref="apigee.isin"/>

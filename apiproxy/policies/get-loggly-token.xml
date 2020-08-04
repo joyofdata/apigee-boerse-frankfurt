@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="get-loggly-token" mapIdentifier="boerse-frankfurt-de-enc">
-    <DisplayName>get loggly token</DisplayName>
-    <Properties/>
     <ExclusiveCache>false</ExclusiveCache>
     <ExpiryTimeInSecs>3600</ExpiryTimeInSecs>
     <Get assignTo="private.loggly.token" index="1">

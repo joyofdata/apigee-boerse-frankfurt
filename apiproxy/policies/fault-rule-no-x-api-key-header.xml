@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="fault-rule-no-x-api-key-header">
-    <DisplayName>fault rule - no x-api-key header</DisplayName>
-    <Properties/>
     <Set>
         <Payload contentType="application/json">{"messages":["You forgot to provide the HTTP header x-api-key with a valid API Key."]}</Payload>
         <StatusCode>401</StatusCode>

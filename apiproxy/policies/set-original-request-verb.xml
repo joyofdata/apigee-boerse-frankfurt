@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage async="false" continueOnError="false" enabled="true" name="set-original-request-verb">
-    <DisplayName>set originalRequestVerb</DisplayName>
     <!--
         This is necessary b/c later for at least one flow the request verb is changed from GET to POST.
         When the request from the target is coming back, the flow conditions are checked again!

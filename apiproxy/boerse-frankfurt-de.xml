@@ -6,9 +6,9 @@
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596559668682</LastModifiedAt>
+    <LastModifiedAt>1596562461172</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:1d93f52463578aebe7883087b75778fe965ed23a844beaadcca276440545875b179a2e669d46fff64b3cf8ad6b83e88f9777357096e323da826ec4022689be70</ManifestVersion>
+    <ManifestVersion>SHA-512:9c31e1b00412692d20d6ac4800c712bb00992cacbc392d2329f216bead69742c82f22af7b677861bc3760b1cdc0bc506a04c426f300530d66b5d774482d3d3e0</ManifestVersion>
     <Policies>
         <Policy>FC-generic-parameter-check</Policy>
         <Policy>FC-optional-json-to-xml</Policy>
