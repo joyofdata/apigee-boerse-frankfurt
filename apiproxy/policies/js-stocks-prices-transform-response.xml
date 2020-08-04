@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="stocks-prices-transform-response">
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="js-stocks-prices-transform-response">
     <ResourceURL>jsc://stocks-prices-transform-response.js</ResourceURL>
 </Javascript>

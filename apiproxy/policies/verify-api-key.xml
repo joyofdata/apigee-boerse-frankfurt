@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <VerifyAPIKey async="false" continueOnError="false" enabled="true" name="verify-api-key">
-    <DisplayName>verify api key</DisplayName>
     <APIKey ref="request.header.x-api-key"/>
 </VerifyAPIKey>

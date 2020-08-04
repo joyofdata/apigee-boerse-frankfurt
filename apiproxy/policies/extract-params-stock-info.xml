@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ExtractVariables async="false" continueOnError="false" enabled="true" name="stock-info-extract-params">
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="extract-params-stock-info">
     <URIPath name="name">
         <Pattern ignoreCase="true">/stocks/{isin}/info</Pattern>
     </URIPath>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<MessageLogging name="final-logging">
+<MessageLogging name="logging-final">
     <Syslog>
         <Message>
             [{private.loggly.token}@41058 tag="{organization.name}.{apiproxy.name}.{environment.name}"]

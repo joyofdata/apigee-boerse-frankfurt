@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="32" name="boerse-frankfurt-de">
+<APIProxy revision="33" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1596562937829</CreatedAt>
+    <CreatedAt>1596565763666</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596562937829</LastModifiedAt>
+    <LastModifiedAt>1596565763666</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:ba95b054a1aeffd5018c2a415d1556a9f9cd52b7635ae5439503f45fbcfa87862ac7d1ac298d8ba310a54abec728b0885c3a2eb3551834e8484c71668852d8ae</ManifestVersion>
+    <ManifestVersion>SHA-512:5a03a46dcb19f21ef2a1c4fd71e9f449a35532e1b55fc26b7d726a98f8f460cbb28d2c121f1a0209438400e539f477dae12b1ecba9c9eb2139ce4cb855ae71fc</ManifestVersion>
     <Policies>
         <Policy>FC-generic-parameter-check</Policy>
         <Policy>FC-optional-json-to-xml</Policy>
         <Policy>add-cors-headers</Policy>
-        <Policy>fault-rule-invalid-x-api-key-header</Policy>
-        <Policy>fault-rule-no-x-api-key-header</Policy>
-        <Policy>final-logging</Policy>
-        <Policy>get-loggly-token</Policy>
-        <Policy>get-stock-info</Policy>
-        <Policy>index-stocks-default-values</Policy>
-        <Policy>index-stocks-extract-params</Policy>
-        <Policy>index-stocks-target-path-and-payload</Policy>
-        <Policy>index-stocks-transform-response</Policy>
+        <Policy>am-fault-rule-invalid-x-api-key-header</Policy>
+        <Policy>am-fault-rule-no-x-api-key-header</Policy>
+        <Policy>callout-get-stock-info</Policy>
+        <Policy>extract-params-index-stocks</Policy>
+        <Policy>extract-params-price-history</Policy>
+        <Policy>extract-params-stock-info</Policy>
+        <Policy>js-index-stocks-transform-response</Policy>
+        <Policy>js-stock-info-transform-response</Policy>
+        <Policy>js-stocks-prices-transform-response</Policy>
+        <Policy>kvm-get-loggly-token</Policy>
         <Policy>lc-stock-info</Policy>
+        <Policy>logging-final</Policy>
         <Policy>pc-stock-info</Policy>
-        <Policy>price-history-default-values</Policy>
-        <Policy>price-history-extract-params</Policy>
-        <Policy>price-history-target-path-and-params</Policy>
         <Policy>quota-developer</Policy>
+        <Policy>set-index-stocks-default-values</Policy>
+        <Policy>set-index-stocks-target-path-and-payload</Policy>
         <Policy>set-original-request-verb</Policy>
+        <Policy>set-price-history-default-values</Policy>
+        <Policy>set-price-history-target-path-and-params</Policy>
+        <Policy>set-stock-info-target-path-and-params</Policy>
         <Policy>set-target-copy-pathsuffix-to-false</Policy>
         <Policy>spike-arrest</Policy>
         <Policy>stats-collect-isin</Policy>
-        <Policy>stock-info-extract-params</Policy>
-        <Policy>stock-info-target-path-and-params</Policy>
-        <Policy>stock-info-transform-response</Policy>
-        <Policy>stocks-prices-transform-response</Policy>
         <Policy>verify-api-key</Policy>
     </Policies>
     <ProxyEndpoints>

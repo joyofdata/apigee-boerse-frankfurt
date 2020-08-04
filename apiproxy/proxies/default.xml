@@ -23,7 +23,7 @@
                 <Condition>request.verb != "OPTIONS"</Condition>
             </Step>
             <Step>
-                <Name>get-loggly-token</Name>
+                <Name>kvm-get-loggly-token</Name>
             </Step>
         </Request>
         <Response/>
@@ -42,18 +42,18 @@
             <Description>retrieve stock info</Description>
             <Request>
                 <Step>
-                    <Name>stock-info-extract-params</Name>
+                    <Name>extract-params-stock-info</Name>
                 </Step>
                 <Step>
                     <Name>FC-generic-parameter-check</Name>
                 </Step>
                 <Step>
-                    <Name>stock-info-target-path-and-params</Name>
+                    <Name>set-stock-info-target-path-and-params</Name>
                 </Step>
             </Request>
             <Response>
                 <Step>
-                    <Name>stock-info-transform-response</Name>
+                    <Name>js-stock-info-transform-response</Name>
                     <Condition>response.status.code = 200</Condition>
                 </Step>
             </Response>
@@ -63,21 +63,21 @@
             <Description>retrieve stocks for index</Description>
             <Request>
                 <Step>
-                    <Name>index-stocks-extract-params</Name>
+                    <Name>extract-params-index-stocks</Name>
                 </Step>
                 <Step>
                     <Name>FC-generic-parameter-check</Name>
                 </Step>
                 <Step>
-                    <Name>index-stocks-default-values</Name>
+                    <Name>set-index-stocks-default-values</Name>
                 </Step>
                 <Step>
-                    <Name>index-stocks-target-path-and-payload</Name>
+                    <Name>set-index-stocks-target-path-and-payload</Name>
                 </Step>
             </Request>
             <Response>
                 <Step>
-                    <Name>index-stocks-transform-response</Name>
+                    <Name>js-index-stocks-transform-response</Name>
                     <Condition>response.status.code = 200</Condition>
                 </Step>
             </Response>
@@ -87,16 +87,16 @@
             <Description>retrieve price history for stock</Description>
             <Request>
                 <Step>
-                    <Name>price-history-extract-params</Name>
+                    <Name>extract-params-price-history</Name>
                 </Step>
                 <Step>
                     <Name>FC-generic-parameter-check</Name>
                 </Step>
                 <Step>
-                    <Name>price-history-default-values</Name>
+                    <Name>set-price-history-default-values</Name>
                 </Step>
                 <Step>
-                    <Name>price-history-target-path-and-params</Name>
+                    <Name>set-price-history-target-path-and-params</Name>
                 </Step>
             </Request>
             <Response>
@@ -104,7 +104,7 @@
                     <Name>lc-stock-info</Name>
                 </Step>
                 <Step>
-                    <Name>get-stock-info</Name>
+                    <Name>callout-get-stock-info</Name>
                     <Condition>lookupcache.lc-stock-info.cachehit = "false"</Condition>
                 </Step>
                 <Step>
@@ -112,7 +112,7 @@
                     <Condition>lookupcache.lc-stock-info.cachehit = "false"</Condition>
                 </Step>
                 <Step>
-                    <Name>stocks-prices-transform-response</Name>
+                    <Name>js-stocks-prices-transform-response</Name>
                 </Step>
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/prices") and (originalRequestVerb = "GET")</Condition>
@@ -134,7 +134,7 @@
         <Step/>
         <Response>
             <Step>
-                <Name>final-logging</Name>
+                <Name>logging-final</Name>
             </Step>
         </Response>
     </PostClientFlow>
