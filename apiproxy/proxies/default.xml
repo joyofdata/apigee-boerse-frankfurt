@@ -141,11 +141,11 @@
     <FaultRules>
         <FaultRule name="verify-api-key-failed">
             <Step>
-                <Name>fault-rule-no-x-api-key-header</Name>
+                <Name>am-fault-rule-no-x-api-key-header</Name>
                 <Condition>request.header.x-api-key = null</Condition>
             </Step>
             <Step>
-                <Name>fault-rule-invalid-x-api-key-header</Name>
+                <Name>am-fault-rule-invalid-x-api-key-header</Name>
                 <!-- 
                     without this complementary condition the step would always be executed 
                     and overwrite the previous' step's response 
