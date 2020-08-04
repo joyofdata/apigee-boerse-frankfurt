@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="33" name="boerse-frankfurt-de">
+<APIProxy revision="34" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1595779371943</CreatedAt>
+    <CreatedAt>1596566362563</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596565862457</LastModifiedAt>
+    <LastModifiedAt>1596566362563</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:526ae41ca1e9a5dcd953da5be86c3e9f3c12ff4730796059e42b353b5d48ce3e3a610b3a4c7e0acc6184a53224366a745ca1594a651add1f0f922e5f7a26b6a8</ManifestVersion>
+    <ManifestVersion>SHA-512:e1fc50d4e280f9392efda995041e83f2e171a2c8ed2c43791cbb1961e98def3dc8001e24c49fe4bb7240bec9e7c5e4c0d56bf09f8ec971acff2285cb6d42956f</ManifestVersion>
     <Policies>
         <Policy>FC-generic-parameter-check</Policy>
         <Policy>FC-optional-json-to-xml</Policy>
@@ -43,7 +43,6 @@
     </ProxyEndpoints>
     <Resources>
         <Resource>openapi://association.json</Resource>
-        <Resource>jsc://debug.js</Resource>
         <Resource>jsc://index-stocks-transform-response.js</Resource>
         <Resource>jsc://stock-info-transform-response.js</Resource>
         <Resource>jsc://stocks-prices-transform-response.js</Resource>

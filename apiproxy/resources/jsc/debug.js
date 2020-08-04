@@ -1,1 +1,0 @@
-print(context.getVariable("stockInfo.content"))

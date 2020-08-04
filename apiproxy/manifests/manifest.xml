@@ -33,10 +33,9 @@
         <VersionInfo resourceName="default" version="SHA-512:0c6d1d6aac30a959330c40cdde6cf036c62f697b7e9b94197b13b5f0bfb015622e76687cb25e3992552aeaee65112a249ddd85973d7f642517274f585e067557"/>
     </ProxyEndpoints>
     <Resources>
-        <VersionInfo resourceName="jsc://debug.js" version="SHA-512:f766bf8c557c0c235ff35035c2d5d404854fed5de7c54c46fefa39b95c0c3fe869ae17c06c9f37dd1441c0ebdad011915e1ce7712775780e268164386908d1a8"/>
-        <VersionInfo resourceName="jsc://index-stocks-transform-response.js" version="SHA-512:26a3cb52572b5c99d9726d6f3c1bbd49df0d03921fb2387e293e47079adecc475c358fc07dc904e6cc0eb023278a325dc96d21da6c0e6bb75af4fa9fe0fa6782"/>
-        <VersionInfo resourceName="jsc://stock-info-transform-response.js" version="SHA-512:681810093237d9b9d1d715f8d7c6cb53f9674617b73ba368b5e48e1ea594c7fe7d33c27b8b22dc381d1aa25fa26296a3aba3269041a3b6e76fe7620a25d612f8"/>
-        <VersionInfo resourceName="jsc://stocks-prices-transform-response.js" version="SHA-512:d6d24bc61dbf257ba469fcbe089efdbd0eb37ffff2257182b9132e5b032b798fa916d42684ae010582500910b6f1119a30616ba4452392b46680709d804a8864"/>
+        <VersionInfo resourceName="jsc://index-stocks-transform-response.js" version="SHA-512:8d1bdb20e16d8ee53a1f64dcf7b3ee5b5e070b3685567a37b7b2bf12a20260beda239ad6684e93410afa38a86ec024ed9ed3b02d10077de3d63f6ceb70fe79bc"/>
+        <VersionInfo resourceName="jsc://stock-info-transform-response.js" version="SHA-512:cd35aa6bf3c28170e7bf2f771e9833abae2e2517427ef5794f248ee367e942a78a5186ba15ed343fe9a6b0013503f4abfd6842f6adfdcebe1ad311064aa39db2"/>
+        <VersionInfo resourceName="jsc://stocks-prices-transform-response.js" version="SHA-512:58b5ec1e75c68d75704b47a451870935eb4142e828f5fd3cab9eda4e6f20e4bfa33530f9e20b4a003f2225b83cb713df5dfbced4ffcf7a20e5702ab5d839b692"/>
         <VersionInfo resourceName="openapi://association.json" version="SHA-512:153775e53f6ee0fdfc54ea2cafdb4318f6ddccfbc56ff83351304f89fafa673b61d20a92e1a247d32ee257a70381e030897dd13325aa688645383601504469a9"/>
     </Resources>
     <SharedFlows/>
