@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-301-to-dev-portal">
+    <Set>
+        <StatusCode>301</StatusCode>
+        <Headers>
+            <Header name="Location">https://person-eval-boersefrankfurt.apigee.io/</Header>
+        </Headers>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</AssignMessage>

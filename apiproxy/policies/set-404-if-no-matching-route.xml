@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="set-404-if-no-matching-route">
+    <Set>
+        <StatusCode>404</StatusCode>
+        <Payload>
+{"messages":["This route does not exist. Check out: https://person-eval-boersefrankfurt.apigee.io/docs/product-stock-exchange-info-api/1/overview"]}
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="true" transport="http" type="response"/>
+</AssignMessage>

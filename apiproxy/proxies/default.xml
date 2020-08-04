@@ -117,6 +117,16 @@
             </Response>
             <Condition>(proxy.pathsuffix MatchesPath "/stocks/*/prices") and (originalRequestVerb = "GET")</Condition>
         </Flow>
+        <Flow name="Fallback">
+            <Request>
+                <Step>
+                    <Name>set-use-nullroute</Name>
+                </Step>
+                <Step>
+                    <Name>set-404-if-no-matching-route</Name>
+                </Step>
+            </Request>
+        </Flow>
     </Flows>
     <PostFlow name="PostFlow">
         <Request/>
@@ -160,7 +170,7 @@
         <VirtualHost>secure</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="nullRoute">
-        <Condition>request.verb = "OPTIONS"</Condition>
+        <Condition>request.verb = "OPTIONS" or useNullRoute = "true"</Condition>
     </RouteRule>
     <RouteRule name="default">
         <TargetEndpoint>default</TargetEndpoint>

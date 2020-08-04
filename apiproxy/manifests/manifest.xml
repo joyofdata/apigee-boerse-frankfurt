@@ -18,6 +18,8 @@
         <VersionInfo resourceName="logging-final" version="SHA-512:893c46868b3a159614161d0b262999c6fdfc022e370668101c8847eba736e0ad42c3cfbfc7c1cda87b4d2f093a2d8e4c084c74a0b941cde6107a6186fa82f938"/>
         <VersionInfo resourceName="pc-stock-info" version="SHA-512:11fd23be94f02b7c6e85bb4d4cd9cab678cb5ff7a100a9c8356cbd214281cd2b20828d598948573c96e9f138ba119c2e47d6d1551253a23d84d060c58a3c4ade"/>
         <VersionInfo resourceName="quota-developer" version="SHA-512:521fc5b8165bb54f6cfed12caab999f83c8dbb06e3d48f4ab0db34f42dc5f2949ce26808c846a90bdd2b0fba389e9e8d7c1992ff0c63b0713d72dfb44a4ffbcd"/>
+        <VersionInfo resourceName="set-301-to-dev-portal" version="SHA-512:d979381f0ba5188070a5adcb69ed962572877a31d1a7e3e7107a396273909c8907405d9c16d9059b68c43e9de3b2f76dd8b6ad3312c8c728d84b326c51d82cb4"/>
+        <VersionInfo resourceName="set-404-if-no-matching-route" version="SHA-512:3ef693f7bc70aa7a39990872cf95639683a8f3d863dc98efb8041b2b9ea17eeb551849f5c4623adfb1e105087572eef9770f32ff85e2b9e6d9dba2a4f504d4f9"/>
         <VersionInfo resourceName="set-index-stocks-default-values" version="SHA-512:04a54f1a38050381fa8ba68b560bab0221455386ffa629640f41954b079e4daa8dd89de8666c470eeb0a6ee24d19f2ac2c06d58a4d5ce26d03ea77f2d9ca8401"/>
         <VersionInfo resourceName="set-index-stocks-target-path-and-payload" version="SHA-512:e0f764bcf5e6e5af5986831035acd9398e38b0b52897ab3b7c70af18f31acda94b9644c6610b90c32adc95938edcb60dd0eea3a6fe1f9c34a3881d7e0ec9886f"/>
         <VersionInfo resourceName="set-original-request-verb" version="SHA-512:4c3f3ba7c46b1cd9e028cec44929601a7abc890b434c1a468a9a540d5768c7d5414f040cdbdff75bc18034048faf1a819b9165d5c921ab78f30db15e61c51ac3"/>
@@ -25,12 +27,14 @@
         <VersionInfo resourceName="set-price-history-target-path-and-params" version="SHA-512:7c6042f39d8809fd452431ae1c37412697732d14e0f6e50a93a6b5119277d1e3c2d723927d2eb754f0259c37a4e6d6323f0b4f1db4ff18a147028f63675887d9"/>
         <VersionInfo resourceName="set-stock-info-target-path-and-params" version="SHA-512:7582acb9b37733441879df0e2f8c7c9f61f56287523596516975b483edd88e822c480d3b99119663ca63e8e8e6742f8f615d4ed6e22bc35f644711402c333758"/>
         <VersionInfo resourceName="set-target-copy-pathsuffix-to-false" version="SHA-512:c5fd59d6eddf3b15d75fdfcf49b48ff22b1835d9e2add11740c02dc691e3b89dc37837d105ed03ac30a2151dd3bf45c34e9d4c22567ee50567f28455eb0c0dc2"/>
+        <VersionInfo resourceName="set-use-nullroute" version="SHA-512:0644d9520bfdd40e6910f020485e81dbe8c73f072acd38871736df5c90e99cbd4b0ebe5403e0d6450fac418d70d1184f6f255b095c47c0830e7ada2fdc2eb82f"/>
         <VersionInfo resourceName="spike-arrest" version="SHA-512:b0c8eda91b7f9faca3b264dbba57c12f6b7553d600b3adba872e96fd20c195dc505b217d3fcc1079d09e4e27d36b34f31ac2c31e51764e04c6b3552f033eab8e"/>
         <VersionInfo resourceName="stats-collect-isin" version="SHA-512:304dd82d597e6b2c2009f5b9c78bc5cb931b9ee742bf2a8c30eb73edc2ce7cc3c460171f9a42dff43d5b50eaa62892de880ad31ddd393c6a30fe91c1b287be8c"/>
         <VersionInfo resourceName="verify-api-key" version="SHA-512:afa26c539e039c696e60eb84e9b77ff6f7290dd6d780e6500766a8942254ab1405f0a21741d146c734589285a3eda1a7777ef3ac81e82ddcc78dfd8ee1f9d0f0"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:0c6d1d6aac30a959330c40cdde6cf036c62f697b7e9b94197b13b5f0bfb015622e76687cb25e3992552aeaee65112a249ddd85973d7f642517274f585e067557"/>
+        <VersionInfo resourceName="default" version="SHA-512:9b7b729ffb7e63c5ad4543d19d40ebf314774a660410fea1f219be9675bf4b8760748a54fe25fa3622d7a499efedaf78a53b4ccf387d164f8c8f4eb63a23fb5b"/>
+        <VersionInfo resourceName="redirect-to-dev-portal" version="SHA-512:2b45b687ab6efde026f0f0c6ff6e2c0a4bbc8e2d2fcaaa83a0dfb5592696a5aa5270d2b471e0cf1d157904fe10f2ac99d6438b24713f25c5458a8f8c814ffc95"/>
     </ProxyEndpoints>
     <Resources>
         <VersionInfo resourceName="jsc://index-stocks-transform-response.js" version="SHA-512:8d1bdb20e16d8ee53a1f64dcf7b3ee5b5e070b3685567a37b7b2bf12a20260beda239ad6684e93410afa38a86ec024ed9ed3b02d10077de3d63f6ceb70fe79bc"/>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="34" name="boerse-frankfurt-de">
+<APIProxy revision="37" name="boerse-frankfurt-de">
     <Basepaths>/boerse-frankfurt-de</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1596566362563</CreatedAt>
+    <CreatedAt>1596569812772</CreatedAt>
     <CreatedBy>person@imap.cc</CreatedBy>
     <Description>Stocks Info API of Boerse Frankfurt</Description>
     <DisplayName>boerse-frankfurt-de</DisplayName>
-    <LastModifiedAt>1596566362563</LastModifiedAt>
+    <LastModifiedAt>1596569812772</LastModifiedAt>
     <LastModifiedBy>person@imap.cc</LastModifiedBy>
-    <ManifestVersion>SHA-512:e1fc50d4e280f9392efda995041e83f2e171a2c8ed2c43791cbb1961e98def3dc8001e24c49fe4bb7240bec9e7c5e4c0d56bf09f8ec971acff2285cb6d42956f</ManifestVersion>
+    <ManifestVersion>SHA-512:ed33ddbf3010279fcaea595e0539ced512ab68bf17918b36418cf91d09b4e695628ba492469bd84003fdd9b53e8c888d4982ceb0bd16d4778a206411f43d4bce</ManifestVersion>
     <Policies>
         <Policy>FC-generic-parameter-check</Policy>
         <Policy>FC-optional-json-to-xml</Policy>
@@ -27,6 +27,8 @@
         <Policy>logging-final</Policy>
         <Policy>pc-stock-info</Policy>
         <Policy>quota-developer</Policy>
+        <Policy>set-301-to-dev-portal</Policy>
+        <Policy>set-404-if-no-matching-route</Policy>
         <Policy>set-index-stocks-default-values</Policy>
         <Policy>set-index-stocks-target-path-and-payload</Policy>
         <Policy>set-original-request-verb</Policy>
@@ -34,12 +36,14 @@
         <Policy>set-price-history-target-path-and-params</Policy>
         <Policy>set-stock-info-target-path-and-params</Policy>
         <Policy>set-target-copy-pathsuffix-to-false</Policy>
+        <Policy>set-use-nullroute</Policy>
         <Policy>spike-arrest</Policy>
         <Policy>stats-collect-isin</Policy>
         <Policy>verify-api-key</Policy>
     </Policies>
     <ProxyEndpoints>
         <ProxyEndpoint>default</ProxyEndpoint>
+        <ProxyEndpoint>redirect-to-dev-portal</ProxyEndpoint>
     </ProxyEndpoints>
     <Resources>
         <Resource>openapi://association.json</Resource>
